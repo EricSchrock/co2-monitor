@@ -28,7 +28,7 @@ The goal of this project is to create a network of CO2 sensors for indoor air qu
      - [ ] Choose which CO2 sensor to use
      - [ ] Create parts list (including tools)
      - [ ] Research/test whether to put a capacitor on the power rail between the Arduino and CO2 sensor
-     - [ ] Research/test whether pull up resistors are needed on the I2C SDA and SCL lines between the Arduino and CO2 sensor
+     - [ ] Research/test whether pull up resistors are needed on the I2C SDA and SCL lines between the Arduino and CO2 sensor (some Arduino boards have built in or configurable pull ups on pins)
    - [ ] Second prototype: Consider cost, size, and power usage
      - [ ] Choose breadboard size (mini, tiny, half, or half+)
      - [ ] Bill of Materials (BOM) including costs, part numbers, and supplier links
