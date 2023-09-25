@@ -1,0 +1,92 @@
+<mxfile host="app.diagrams.net" modified="2023-09-25T18:44:22.453Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.36" etag="bStO-_iHEqu-Nc1BZ6lp" version="21.8.2" type="device">
+  <diagram name="Page-1" id="iX4gXUbT2WlzyU6pbDdY">
+    <mxGraphModel dx="1042" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="98foLCT4dFzrkUpJzd-V-31" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="160" y="200" width="180" height="263" as="geometry" />
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-12" value="Raspberry Pi 4B" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="98foLCT4dFzrkUpJzd-V-31">
+          <mxGeometry width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-1" value="Wi-Fi" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.wifi;pointerEvents=1" vertex="1" parent="98foLCT4dFzrkUpJzd-V-31">
+          <mxGeometry x="10.300000000000011" y="110" width="29.7" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-3" value="BLE" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.bluetooth;pointerEvents=1" vertex="1" parent="98foLCT4dFzrkUpJzd-V-31">
+          <mxGeometry x="150" y="102.20000000000005" width="15" height="28.799999999999997" as="geometry" />
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-24" value="USB Power" style="shape=mxgraph.signs.tech.usb;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="98foLCT4dFzrkUpJzd-V-31">
+          <mxGeometry x="80" y="92" width="20" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-30" value="" style="group" vertex="1" connectable="0" parent="98foLCT4dFzrkUpJzd-V-31">
+          <mxGeometry x="2" y="20" width="162" height="67" as="geometry" />
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-23" value="LAN website" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="98foLCT4dFzrkUpJzd-V-30">
+          <mxGeometry x="12" y="8.5" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-26" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/communication-technology/500/code_brackets-128.png" vertex="1" parent="98foLCT4dFzrkUpJzd-V-30">
+          <mxGeometry width="67" height="67" as="geometry" />
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-29" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/databases.svg;" vertex="1" parent="98foLCT4dFzrkUpJzd-V-30">
+          <mxGeometry x="126" y="19.5" width="28.57" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-36" value="Base Station" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="180" y="100" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-39" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="400" y="150" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-22" value="Arduino Nano" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="98foLCT4dFzrkUpJzd-V-39">
+          <mxGeometry width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-32" value="CO2 Sensor" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="98foLCT4dFzrkUpJzd-V-39">
+          <mxGeometry x="160" y="25" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="98foLCT4dFzrkUpJzd-V-39" source="98foLCT4dFzrkUpJzd-V-22" target="98foLCT4dFzrkUpJzd-V-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-34" value="I2C" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="98foLCT4dFzrkUpJzd-V-33">
+          <mxGeometry x="0.056" y="-4" relative="1" as="geometry">
+            <mxPoint x="-2" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-35" value="BLE" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.bluetooth;pointerEvents=1" vertex="1" parent="98foLCT4dFzrkUpJzd-V-39">
+          <mxGeometry x="20" y="40.700000000000045" width="15" height="28.799999999999997" as="geometry" />
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-37" value="USB Power" style="shape=mxgraph.signs.tech.usb;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="98foLCT4dFzrkUpJzd-V-39">
+          <mxGeometry x="70" y="30.5" width="20" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-40" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="400" y="310" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-41" value="Arduino Nano" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="98foLCT4dFzrkUpJzd-V-40">
+          <mxGeometry width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-42" value="CO2 Sensor" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="98foLCT4dFzrkUpJzd-V-40">
+          <mxGeometry x="160" y="25" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="98foLCT4dFzrkUpJzd-V-40" source="98foLCT4dFzrkUpJzd-V-41" target="98foLCT4dFzrkUpJzd-V-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-44" value="I2C" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="98foLCT4dFzrkUpJzd-V-43">
+          <mxGeometry x="0.056" y="-4" relative="1" as="geometry">
+            <mxPoint x="-2" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-45" value="BLE" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.bluetooth;pointerEvents=1" vertex="1" parent="98foLCT4dFzrkUpJzd-V-40">
+          <mxGeometry x="20" y="40.700000000000045" width="15" height="28.799999999999997" as="geometry" />
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-46" value="USB Power" style="shape=mxgraph.signs.tech.usb;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="98foLCT4dFzrkUpJzd-V-40">
+          <mxGeometry x="70" y="30.5" width="20" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-47" value="Sensor Network" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="435" y="100" width="145" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="98foLCT4dFzrkUpJzd-V-48" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/developer-set-3/128/other-128.png" vertex="1" parent="1">
+          <mxGeometry x="472.5" y="230" width="70" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
