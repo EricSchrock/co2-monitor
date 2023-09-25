@@ -1,7 +1,5 @@
 # CO2 Monitor
 
-## Summary
-
 The goal of this project is to create a network of CO2 sensors for indoor air quality monitoring. See our [project proposal](https://github.com/EricSchrock/co2-monitor/blob/main/submissions/proposal.pdf) for more detail on our motivation and goals.
 
 
