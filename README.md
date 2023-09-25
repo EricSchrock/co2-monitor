@@ -2,7 +2,16 @@
 
 ## Summary
 
-Class project... See proposal...
+The goal of this project is to create a network of CO2 sensors for indoor air quality monitoring. See our [project proposal](https://github.com/EricSchrock/co2-monitor/blob/main/submissions/proposal.pdf) for more detail on our motivation and goals.
+
+&nbsp;
+### System Architecture
+
+
+&nbsp;
+### Sensor Unit
+
+![Alt Text](docs/CO2-sensor-unit.png?raw=true)
 
 
 &nbsp;
@@ -11,7 +20,7 @@ Class project... See proposal...
  - [ ] Hardware
    - [ ] First prototype: Just get something working
      - [ ] Diagram initial system architecture
-     - [ ] Diagram initial sensor unit
+     - [x] Diagram initial sensor unit
      - [ ] Choose which Arduino to use for the sensor unit
      - [ ] Choose which CO2 sensor to use
      - [ ] Create parts list (including )
