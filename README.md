@@ -12,21 +12,15 @@ The goal of this project is to create a network of CO2 sensors for indoor air qu
 
 
 &nbsp;
-### Sensor Unit
-
-![Alt Text](docs/CO2-sensor-unit.png?raw=true)
-
-
-&nbsp;
 ## Tasks
 
  - Hardware
-   - [ ] First prototype: Just get something working
+   - [ ] [First prototype: Just get something working](https://github.com/EricSchrock/co2-monitor/blob/main/docs/first-prototype.md)
      - [x] Diagram initial system architecture
      - [x] Diagram initial sensor unit
-     - [ ] Choose which Arduino to use for the sensor unit
-     - [ ] Choose which CO2 sensor to use
-     - [ ] Create parts list (including tools)
+     - [x] [Choose which Arduino to use for the sensor unit](https://github.com/EricSchrock/co2-monitor/blob/main/docs/Arduino.md)
+     - [ ] [Choose which CO2 sensor to use](https://github.com/EricSchrock/co2-monitor/blob/main/docs/CO2-sensor.md)
+     - [x] Create parts list (including tools)
      - [ ] Research/test whether to put a capacitor on the power rail between the Arduino and CO2 sensor
      - [ ] Research/test whether pull up resistors are needed on the I2C SDA and SCL lines between the Arduino and CO2 sensor (some Arduino boards have built in or configurable pull ups on pins)
    - [ ] Second prototype: Consider cost, size, and power usage
