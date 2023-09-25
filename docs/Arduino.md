@@ -1,18 +1,19 @@
 
 ## Arduino Comparison
 
-| Arduino     | Price  | Shipping | Headers* | 3V3 | 5V  | I2C   | BT  | BLE | Fritzing | Link |
-|-------------|--------|----------|----------|-----|-----|-------|-----|-----|----------|------|
-| Micro       | $24.90 |   3 days |      Yes | Yes | Yes | Yes   |  No |  No |   Yes*** | https://store-usa.arduino.cc/products/arduino-micro |
-| Nano        | $24.90 |   3 days |      Yes | Yes | Yes | Yes   |  No |  No |   Yes    | https://store-usa.arduino.cc/products/arduino-nano |
-| Nano Every  | $14.70 |   3 days |      Yes | Yes | Yes | Yes   |  No |  No |   Yes*** | https://store-usa.arduino.cc/products/arduino-nano-every-with-headers |
-| Nano 33 BLE | $29.30 |   3 days |      Yes | Yes | Yes | Yes** | Yes | Yes |   Yes*** | https://store-usa.arduino.cc/products/arduino-nano-33-ble-with-headers |
-| Nano 33 IoT | $27.00 |   3 days |      Yes | Yes | Yes | Yes** | Yes | Yes |   Yes*** | https://store-usa.arduino.cc/products/arduino-nano-33-iot-with-headers |
-| Nano ESP32  | $21.00 |   3 days |      Yes | Yes | Yes | Yes   | Yes |  No |    No    | https://store-usa.arduino.cc/products/nano-esp32-with-headers |
+| Arduino     | Price* | Shipping | Headers** | 3V3 | 5V  | I2C    | BT  | BLE | Fritzing  | Link |
+|-------------|--------|----------|-----------|-----|-----|--------|-----|-----|-----------|------|
+| Micro       | $24.90 |   3 days |       Yes | Yes | Yes | Yes    |  No |  No |   Yes**** | https://store-usa.arduino.cc/products/arduino-micro |
+| Nano        | $24.90 |   3 days |       Yes | Yes | Yes | Yes    |  No |  No |   Yes     | https://store-usa.arduino.cc/products/arduino-nano |
+| Nano Every  | $14.70 |   3 days |       Yes | Yes | Yes | Yes    |  No |  No |   Yes**** | https://store-usa.arduino.cc/products/arduino-nano-every-with-headers |
+| Nano 33 BLE | $29.30 |   3 days |       Yes | Yes | Yes | Yes*** | Yes | Yes |   Yes**** | https://store-usa.arduino.cc/products/arduino-nano-33-ble-with-headers |
+| Nano 33 IoT | $27.00 |   3 days |       Yes | Yes | Yes | Yes*** | Yes | Yes |   Yes**** | https://store-usa.arduino.cc/products/arduino-nano-33-iot-with-headers |
+| Nano ESP32  | $21.00 |   3 days |       Yes | Yes | Yes | Yes    | Yes |  No |    No     | https://store-usa.arduino.cc/products/nano-esp32-with-headers |
 
-*Breadboard compatible headers \
-**Built in pull up resistors \
-***Custom Fritzing part available to download
+*Does not include shipping \
+**Breadboard compatible headers \
+***Built in pull up resistors \
+****Custom Fritzing part available to download
 
 
 &nbsp;

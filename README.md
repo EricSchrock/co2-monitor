@@ -6,7 +6,7 @@ The goal of this project is to create a network of CO2 sensors for indoor air qu
 
 
 &nbsp;
-### System Architecture
+## System Architecture
 
 ![Alt Text](docs/system-architecture.png?raw=true)
 
