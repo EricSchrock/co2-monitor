@@ -9,6 +9,7 @@
 | Nano 33 BLE | $29.30 |   3 days |       Yes | Yes | Yes | Yes*** | Yes | Yes |   Yes**** | https://store-usa.arduino.cc/products/arduino-nano-33-ble-with-headers |
 | Nano 33 IoT | $27.00 |   3 days |       Yes | Yes | Yes | Yes*** | Yes | Yes |   Yes**** | https://store-usa.arduino.cc/products/arduino-nano-33-iot-with-headers |
 | Nano ESP32  | $21.00 |   3 days |       Yes | Yes | Yes | Yes    | Yes |  No |    No     | https://store-usa.arduino.cc/products/nano-esp32-with-headers |
+| RPi Pico WH | $7.--  | 1-5+ days|       Yes | Yes | Yes | Yes    | Yes | Yes | Unknown   | https://www.sparkfun.com/products/20174 |
 
 *Does not include shipping \
 **Breadboard compatible headers \
