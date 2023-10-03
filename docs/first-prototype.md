@@ -6,7 +6,7 @@ The goal of our first prototype is to just get something working. Additionally, 
 &nbsp;
 ## Layout
 
-![Alt Text](CO2-sensor-unit.png?raw=true)
+![Alt Text](first-prototype.png?raw=true)
 
 
 &nbsp;
