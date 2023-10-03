@@ -4,7 +4,7 @@ The goal of our first prototype is to just get something working. Additionally, 
 
 
 &nbsp;
-## Layout
+## Layout (sensor unit)
 
 ![Alt Text](first-prototype.png?raw=true)
 
@@ -16,12 +16,12 @@ Some of these items are optional. The parts list for the second prototype will b
 
 | Item                       | Notes                              |
 |----------------------------|------------------------------------|
-| Raspberry Pi               | Reuse 4B from labs                 |
-| Arduino Nano 33 IoT        | Make sure it comes with headers    |
-| USB cables for Pi and Nano | Power and programming              |
-| USB wall wart for Nano     | Use wall power for sensor units    |
-| CO2 sensors                | May want to try multiple types     |
-| Breadboard                 | Any size 20 rows or larger for now |
+| Raspberry Pi 4B            |                                    |
+| Raspberry Pi Pico WH       |                                    |
+| USB cables for Pi boards   | Power and programming              |
+| USB wall wart for Picos    | Use wall power for sensor units    |
+| Sparkfun ENS160            |                                    |
+| Breadboard                 | Half or full size should work      |
 | Breadboard wire kit        | For CO2 sensor                     |
 | Resistor and capacitor kit | For pull ups and power smoothing   |
 | Soldering iron             | For CO2 sensor                     |
