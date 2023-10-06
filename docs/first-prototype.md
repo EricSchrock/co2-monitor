@@ -18,11 +18,12 @@ Some of these items are optional. The parts list for the second prototype will b
 |----------------------------|------------------------------------|
 | Raspberry Pi 4B            |                                    |
 | Raspberry Pi Pico WH       |                                    |
-| USB cables for Pi boards   | Power and programming              |
-| USB wall wart for Picos    | Use wall power for sensor units    |
+| USB-C cable for PI 4B      |                                    |
+| Micro USB cable for Pico   | Needs to support power and data    |
+| USB wall wart for Pico     | Use wall power for sensor units    |
 | Sparkfun ENS160            |                                    |
 | Breadboard                 | Half or full size should work      |
-| Breadboard wire kit        | For CO2 sensor                     |
+| Breadboard wire kit        |                                    |
 | Resistor and capacitor kit | For pull ups and power smoothing   |
 | Soldering iron             | For CO2 sensor                     |
 | Soldering station          | With clips to hold components      |
