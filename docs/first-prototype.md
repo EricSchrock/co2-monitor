@@ -28,3 +28,10 @@ Some of these items are optional. The parts list for the second prototype will b
 | Soldering iron             | For CO2 sensor                     |
 | Soldering station          | With clips to hold components      |
 | Oscope or logic analyzer   | For I2C debugging                  |
+
+
+&nbsp;
+## Setup (sensor unit)
+
+https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico/0
+https://datasheets.raspberrypi.com/picow/connecting-to-the-internet-with-pico-w.pdf
