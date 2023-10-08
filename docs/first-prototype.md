@@ -33,5 +33,5 @@ Some of these items are optional. The parts list for the second prototype will b
 &nbsp;
 ## Setup (sensor unit)
 
-https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico/0
+https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico/0 \
 https://datasheets.raspberrypi.com/picow/connecting-to-the-internet-with-pico-w.pdf
