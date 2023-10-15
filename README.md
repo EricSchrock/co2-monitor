@@ -42,6 +42,10 @@ Software
     - [ ] Live readings
     - [ ] Historical trends
     - [ ] Multiple sensors
+  - [ ] Diagrams (flow charts, activity diagrams, and/or sequence diagram)
+    - [ ] Sensor unit (sensor.py)
+    - [ ] Base station (server.py)
+    - [ ] Whole system
 
 &nbsp;
 ## Resources
