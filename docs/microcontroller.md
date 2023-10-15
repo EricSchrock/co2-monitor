@@ -23,16 +23,9 @@ RPi Pico WH just went out of stock on Sparkfun, it is also available at
 &nbsp;
 ## Microcontroller Choice
 
-We started our search with the Arduino Micro and Nano because we want to keep our sensor units small and cheap. We plan to build our prototypes on small breadboards, so having pre-soldered headers that fit breadboard rails will keep things simple. We anticipate communicating with our CO2 sensor over I2C but we don't know yet whether the sensor we choose will require 3V3 or 5V power. Power usage is also a consideration for our project so we'd like to use BLE rather than vanilla Bluetooth if possible The Nano 33 IoT is the cheapest Arduino that checks all the boxes.
+We started our search with the Arduino Micro and Nano because we want to keep our sensor units small and cheap. We plan to build our prototypes on small breadboards, so having pre-soldered headers that fit breadboard rails will keep things simple. We anticipate communicating with our CO2 sensor over I2C but we don't know yet whether the sensor we choose will require 3V3 or 5V power. Power usage is also a consideration for our project so we'd like to use BLE rather than vanilla Bluetooth or Wi-Fi if possible. We were initially leaning towards the Arduino Nano 33 IoT, but ended up landing on the Raspberry Pi Pico WH for the reasons below.
 
-The key features for the Sensor Processing unit are energy requirements, wireless
-communication ability, and cost. The goal is to have a scalable network of
-deployed sensors throughout a building, so minimizing the cost and energy
-requirements of each unit is desirable. However, networking ability is a
-necessity.
-
-The Raspberry Pi Pico WH has the following pros
-    - Low Cost: Only $7.00 per unit
+  - Low Cost: Only $7.00 per unit
   - Versatile Power input: 5V via micro USB or 1.8V - 5.5 V from any power
     source directly to VSYS (battery, etc.) with automatic conversion to 3V3
     via onboard buck-boost SMPS.
@@ -48,6 +41,4 @@ The Raspberry Pi Pico WH has the following pros
   - 2 UART, 2 SPI, 16 PWM, 4 ADC channels
   - 1 timer with 4 alarms, 1 real time clock
   - 2 Programmable I/O (PIO) blocks, 8 state machines total
-  - Fritzing Part
-<https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html>
-
+  - Fritzing Part: <https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html>
