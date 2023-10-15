@@ -20,22 +20,33 @@ Note: The CO2 sensor shown in the Fritzing diagram above does not match the actu
 &nbsp;
 ## Tasks
 
- - Hardware
-   - [x] [First prototype: Just get something working](https://github.com/EricSchrock/co2-monitor/blob/main/docs/first-prototype.md)
-     - [x] Diagram initial system architecture
-     - [x] Diagram initial sensor unit
-     - [x] [Choose which microcontroller to use for the sensor unit](https://github.com/EricSchrock/co2-monitor/blob/main/docs/microcontroller.md)
-     - [x] [Choose which CO2 sensor to use](https://github.com/EricSchrock/co2-monitor/blob/main/docs/co2-sensor.md)
-     - [x] Create parts list (including tools)
-     - [x] Research/test whether to put a capacitor on the power rail between the microcontroller and CO2 sensor (some microcontrollers have built in capacitance on their power outputs)
-     - [x] Research/test whether pull up resistors are needed on the I2C SDA and SCL lines between the microcontroller and CO2 sensor (some microcontrollers have built in or configurable pull ups on pins)
-   - [ ] Second prototype: Consider cost, size, and power usage
-     - [x] Choose breadboard size (mini, tiny, half, or half+)
-     - [ ] Bill of Materials (BOM) including costs, part numbers, and supplier links
- - Software
-   - [x] Sensor readings displayed on sensor unit (debugger, attached LCD, etc.)
-   - [ ] Sensor readings displayed on base unit (over Bluetooth or BLE)
-   - [ ] Sensor readings displayed on LAN website hosted on base unit
-     - [ ] Live readings
-     - [ ] Historical trends
-     - [ ] Multiple sensors
+Hardware
+  - [x] [First prototype: Just get something working](https://github.com/EricSchrock/co2-monitor/blob/main/docs/first-prototype.md)
+    - [x] Diagram initial system architecture
+    - [x] Diagram initial sensor unit
+    - [x] [Choose which microcontroller to use for the sensor unit](https://github.com/EricSchrock/co2-monitor/blob/main/docs/microcontroller.md)
+    - [x] [Choose which CO2 sensor to use](https://github.com/EricSchrock/co2-monitor/blob/main/docs/co2-sensor.md)
+    - [x] Create parts list (including tools)
+    - [x] Research/test whether to put a capacitor on the power rail between the microcontroller and CO2 sensor (some microcontrollers have built in capacitance on their power outputs)
+    - [x] Research/test whether pull up resistors are needed on the I2C SDA and SCL lines between the microcontroller and CO2 sensor (some microcontrollers have built in or configurable pull ups on pins)
+  - [ ] Second prototype: Consider cost, size, and power usage
+    - [x] Choose breadboard size (mini, tiny, half, or half+)
+    - [ ] Bill of Materials (BOM) including costs, part numbers, and supplier links
+
+Software
+  - [x] Sensor readings displayed on sensor unit (via debugger, attached LCD, etc.)
+  - [ ] Sensor readings displayed on base station (over Bluetooth, Wi-Fi, or BLE)
+    - [x] Wi-Fi
+    - [ ] Bluetooth or BLE (BLE preferable)
+  - [ ] Sensor readings displayed on locally hosted website served from the base station
+    - [ ] Live readings
+    - [ ] Historical trends
+    - [ ] Multiple sensors
+
+&nbsp;
+## Resources
+
+ - <https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html>
+ - <https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico/0>
+ - <https://datasheets.raspberrypi.com/picow/connecting-to-the-internet-with-pico-w.pdf>
+ - <https://cdn.sparkfun.com/assets/3/c/7/5/5/SC-001224-DS-7-ENS160-Datasheet.pdf>
