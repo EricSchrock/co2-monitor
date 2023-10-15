@@ -4,38 +4,38 @@ The goal of this project is to create a network of CO2 sensors for indoor air qu
 
 
 &nbsp;
-## System Architecture
+## Design
 
-![Alt Text](docs/system-architecture.png?raw=true)
+Our system is composed of a variable number of sensor units, which wirelessly report CO2 readings back to a base station. The base station presents these readings via a locally hosted website.
+
+The base station is a Raspberry Pi 4B. We considered a range of [microcontrollers](https://github.com/EricSchrock/co2-monitor/blob/main/docs/microcontroller.md) and [CO2 sensors](https://github.com/EricSchrock/co2-monitor/blob/main/docs/co2-sensor.md) for the sensor unit. We settled on the Raspberry Pi Pico W connected to a Sparkfun ENS160 sensor over I2C.
+
+| System                         | Sensor Unit                    |
+|--------------------------------|--------------------------------|
+| <img src="images/system.png"/> | <img src="images/sensor.png"/> |
+
+Note: The CO2 sensor shown in the Fritzing diagram above does not match the actual part and is only meant to give a general sense of the design.
 
 
 &nbsp;
 ## Tasks
 
  - Hardware
-   - [ ] [First prototype: Just get something working](https://github.com/EricSchrock/co2-monitor/blob/main/docs/first-prototype.md)
+   - [x] [First prototype: Just get something working](https://github.com/EricSchrock/co2-monitor/blob/main/docs/first-prototype.md)
      - [x] Diagram initial system architecture
      - [x] Diagram initial sensor unit
      - [x] [Choose which microcontroller to use for the sensor unit](https://github.com/EricSchrock/co2-monitor/blob/main/docs/microcontroller.md)
      - [x] [Choose which CO2 sensor to use](https://github.com/EricSchrock/co2-monitor/blob/main/docs/co2-sensor.md)
      - [x] Create parts list (including tools)
-     - [ ] Research/test whether to put a capacitor on the power rail between the microcontroller and CO2 sensor (some microcontrollers have built in capacitance on their power outputs)
-     - [ ] Research/test whether pull up resistors are needed on the I2C SDA and SCL lines between the microcontroller and CO2 sensor (some microcontrollers have built in or configurable pull ups on pins)
+     - [x] Research/test whether to put a capacitor on the power rail between the microcontroller and CO2 sensor (some microcontrollers have built in capacitance on their power outputs)
+     - [x] Research/test whether pull up resistors are needed on the I2C SDA and SCL lines between the microcontroller and CO2 sensor (some microcontrollers have built in or configurable pull ups on pins)
    - [ ] Second prototype: Consider cost, size, and power usage
-     - [ ] Choose breadboard size (mini, tiny, half, or half+)
+     - [x] Choose breadboard size (mini, tiny, half, or half+)
      - [ ] Bill of Materials (BOM) including costs, part numbers, and supplier links
-     - [ ] Create a [custom Fritzing part](https://fritzing.org/learning/tutorials/creating-custom-parts) for the CO2 sensor
  - Software
-   - [ ] Sensor readings displayed on sensor unit (debugger, attached LCD, etc.)
+   - [x] Sensor readings displayed on sensor unit (debugger, attached LCD, etc.)
    - [ ] Sensor readings displayed on base unit (over Bluetooth or BLE)
    - [ ] Sensor readings displayed on LAN website hosted on base unit
      - [ ] Live readings
      - [ ] Historical trends
      - [ ] Multiple sensors
-
-
-&nbsp;
-## Resources
-
-1. [Arduino I2C guide](https://docs.arduino.cc/learn/communication/wire)
-2. [Arduino BLE guide](https://docs.arduino.cc/tutorials/nano-33-ble-sense/ble-device-to-device)
