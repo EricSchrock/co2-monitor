@@ -18,6 +18,40 @@ Note: The CO2 sensor shown in the Fritzing diagram above does not match the actu
 
 
 &nbsp;
+## Bill of Materials (BOM)
+
+### Base Station
+
+| Part                   | Price* | Supplier  | Link                                                                     |
+|------------------------|--------|-----------|--------------------------------------------------------------------------|
+| Raspberry Pi 4B (8 GB) | $75.00 | PiShop.us | https://www.pishop.us/product/raspberry-pi-4-model-b-8gb/                |
+| 15W power supply       |  $8.00 | PiShop.us | https://www.pishop.us/product/raspberry-pi-15w-power-supply-us-white/    |
+| Case                   |  $5.00 | PiShop.us | https://www.pishop.us/product/raspberry-pi-4-case-red-white/             |
+| **Total**              | $88.00 |           |                                                                          |
+
+*Price does not include shipping or bulk discounts.
+
+### Sensor Unit
+
+| Part                   | Price* | Supplier  | Link                                                                                |
+|------------------------|--------|-----------|-------------------------------------------------------------------------------------|
+| Raspberry Pi Pico WH   |  $7.00 | PiShop.us | https://www.pishop.us/product/raspberry-pi-pico-wh/                                 |
+| 12.5W power supply     |  $8.00 | PiShop.us | https://www.pishop.us/product/raspberry-pi-12-5w-power-supply-us-white/             |
+| Sparkfun ENS160        | $19.95 | SparkFun  | https://www.sparkfun.com/products/20844                                             |
+| Half sized bread board |  $4.75 | PiShop.us | https://www.pishop.us/product/half-size-400-pin-diy-breadboard-white/               |
+| Breadboard wire kit**  |  $2.32 | PiShop.us | https://www.pishop.us/product/breadboard-wiring-kit/                                |
+| Headers for ENS160**   |  $0.35 | PiShop.us | https://www.pishop.us/product/break-away-headers-40-pin-male-long-centered-pth-0-1/ |
+| **Total**              | $42.37 |           |                                                                                     |
+
+*Price does not include shipping or bulk discounts. \
+**One set enough to furnish at least three sensor units. Price divided by three.
+
+### System
+
+One system with a base station and three sensor units would cost $215.11 (not accounting for shipping). A productionized system could cost much less by buying in bulk and by using a less powerful Raspberry Pi (e.g. less RAM) in the base station. A productionized system would need to add a protective case for the sensor units.
+
+
+&nbsp;
 ## Tasks
 
 Hardware
@@ -29,9 +63,9 @@ Hardware
     - [x] Create parts list (including tools)
     - [x] Research/test whether to put a capacitor on the power rail between the microcontroller and CO2 sensor (some microcontrollers have built in capacitance on their power outputs)
     - [x] Research/test whether pull up resistors are needed on the I2C SDA and SCL lines between the microcontroller and CO2 sensor (some microcontrollers have built in or configurable pull ups on pins)
-  - [ ] Second prototype: Consider cost, size, and power usage
+  - [x] Second prototype: Consider cost, size, and power usage
     - [x] Choose breadboard size (mini, tiny, half, or half+)
-    - [ ] Bill of Materials (BOM) including costs, part numbers, and supplier links
+    - [x] Bill of Materials (BOM) including costs, part numbers, and supplier links
 
 Software
   - [x] Sensor readings displayed on sensor unit (via debugger, attached LCD, etc.)
