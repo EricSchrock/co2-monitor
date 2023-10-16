@@ -44,7 +44,7 @@ Note: The CO2 sensor shown in the Fritzing diagram above does not match the actu
 | **Total**              | $42.37 |           |                                                                                     |
 
 *Price does not include shipping or bulk discounts. \
-**One set enough to furnish at least three sensor units. Price divided by three.
+**One set is enough to furnish at least three sensor units. Price divided by three.
 
 ### System
 
