@@ -1,7 +1,7 @@
 from machine import I2C, Pin
 
 class ENS160:
-    def __init__(self, i2c: int = 0, scl: int = 1, sda: int = 0):
+    def __init__(self, i2c: int = 0, scl: str = "GP17", sda: str = "GP16"):
         self.i2c = I2C(i2c, scl=Pin(scl), sda=Pin(sda))
 
     def _read(self, reg: int, size: int):
