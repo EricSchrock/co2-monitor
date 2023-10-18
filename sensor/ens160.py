@@ -4,10 +4,10 @@ class ENS160:
     def __init__(self, i2c: int = 0, scl: str = "GP17", sda: str = "GP16"):
         self.i2c = I2C(i2c, scl=Pin(scl), sda=Pin(sda))
 
-    def _read(self, reg: int, size: int):
+    def _read(self, reg: int, size: int) -> int:
         return int.from_bytes(self.i2c.readfrom_mem(0x53, reg, size), 'little')
 
-    def _write(self, reg: int, value: bytes, size: int):
+    def _write(self, reg: int, value: bytes, size: int) -> None:
         self.i2c.writeto_mem(0x53, reg, value.to_bytes(size, 'little'))
 
     def opmode(self, mode=None) -> int:
@@ -16,6 +16,9 @@ class ENS160:
             return mode
         else:
             return self._read(0x10, 1)
+
+    def enable(self) -> None:
+        self.opmode(0x02)
 
     def status(self) -> int:
         return self._read(0x20, 1)

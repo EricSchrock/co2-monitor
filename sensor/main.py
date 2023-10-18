@@ -17,9 +17,10 @@ while wlan.status() == STAT_CONNECTING:
 if wlan.isconnected():
     led.on()
 
-sensor = ENS160()         # CO2 Sensor attached via I2C
-sensor.opmode(0x02)       # Enable sensor readings
-uid = unique_id().hex()   # Unique device ID
+sensor = ENS160()
+sensor.enable()
+
+uid = unique_id().hex() # Unique device ID
 while True:
     try:
         client = socket()
