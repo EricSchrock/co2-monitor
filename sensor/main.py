@@ -3,12 +3,9 @@ import network
 import socket
 import time
 
+from config import SSID, PWD, IP, PORT
 from ens160 import ENS160
 
-SSID = 'SSID'
-PWD = 'PASSWORD'
-IP = '192.168.1.125'
-PORT = 65432
 LED = Pin("LED", Pin.OUT)
 
 wlan = network.WLAN(network.STA_IF)
