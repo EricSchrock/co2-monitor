@@ -1,8 +1,7 @@
-# test_server.py
 import socket
 import time
 import random
-from config import IP, PORT, SENSORS
+from config import IP, PORT, SENSORS # Set IP = 'localhost' to test the clients and host on the same machine
 
 clients = []
 for i in range(SENSORS):
