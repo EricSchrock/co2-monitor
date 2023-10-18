@@ -27,7 +27,7 @@ class ENS160:
         return self._read(0x21, 1)
 
     def tvoc(self) -> int:
-        return self._read(0x24, 2)
+        return self._read(0x22, 2)
 
     def eco2(self) -> int:
         return self._read(0x24, 2)
