@@ -2,6 +2,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 import atexit
 
+_data_dir = Path.home()/'.co2_data'
 _files = {}
 
 @atexit.register
@@ -15,7 +16,7 @@ def write(uid: str, data: str) -> None:
     date = now.strftime('%Y-%m-%d')
     time = now.strftime('%H:%M:%S')
     if _files.get(date) is None:
-        Path(f'data/{date}').mkdir(parents=True, exist_ok=True)
+        (_data_dir/date).mkdir(parents=True, exist_ok=True)
         _files[date] = {}
         yesterday = (now - timedelta(days=1)).strftime('%Y-%m-%d')
         if _files.get(yesterday) is not None:
@@ -23,5 +24,5 @@ def write(uid: str, data: str) -> None:
                 file.close()
             del _files[yesterday]
     if _files[date].get(uid) is None:
-        _files[date][uid] = open(f'data/{date}/{uid}.csv', 'a', buffering=1)
+        _files[date][uid] = open(_data_dir/date/f'{uid}.csv', 'a', buffering=1)
     _files[date][uid].write(f'{time},{data}\n')

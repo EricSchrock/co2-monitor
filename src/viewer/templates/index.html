@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CO2 Viewer</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='base.css')}}">
+</head>
+<body>
+  <form method="POST">
+    <input type="date" name="date" value="{{request.form.date}}"></input>
+    <select id="sensor" name="sensor">
+      <option value="" {% if request.form.sensor == "" %}selected{% endif %}>all</option>
+      {% for key, val in sensors.items() %}
+      <option value="{{key}}" {% if request.form.sensor == key %}selected{% endif %}>{{val}}</option>
+      {% endfor %}
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+  <img src="data:image/png;base64,{{data}}"/>
+</body>
+</html>
