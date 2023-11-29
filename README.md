@@ -50,6 +50,7 @@ Note: The CO2 sensor shown in the Fritzing diagram above does not match the actu
 
 One system with a base station and three sensor units would cost $215.11 (not accounting for shipping). A productionized system could cost much less by buying in bulk and by using a less powerful Raspberry Pi (e.g. less RAM) in the base station. A productionized system would need to add a protective case for the sensor units.
 
+
 &nbsp;
 ## Installation
 
@@ -74,9 +75,7 @@ Hardware
 
 Software
   - [x] Sensor readings displayed on sensor unit (via debugger, attached LCD, etc.)
-  - [ ] Sensor readings displayed on base station (over Bluetooth, Wi-Fi, or BLE)
-    - [x] Wi-Fi
-    - [ ] Bluetooth or BLE (BLE preferable)
+  - [x] Sensor readings displayed on base station (over wifi)
   - [ ] Sensor readings displayed on locally hosted website served from the base station
     - [ ] Live readings
     - [ ] Historical trends
