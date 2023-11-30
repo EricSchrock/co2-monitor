@@ -24,10 +24,19 @@ todo: Rehash motivation section from the proposal. Maybe remove "low energy" as 
 
 ## Technical Approach
 
-todo: "Describe the technical approach you used to complete your work.
-You can give your overall architecture, describe how data flows through your system,
-describe algorithms you developed, provide circuit diagrams, etc. Provide anything
-important in understanding *how* you did what you did."
+Our overall system consists of a base station connected to a network of sensors over wifi. The base station is a Raspberry Pi 4B running a server. Sensors connect to the server and periodically report CO2 measurements. The base station then presents those measurements on a website available on the local area network.
+
+Each sensor consists of a Raspberry Pi Pico WH connected to a CO2 sensor over I2C. Each sensor runs a client that is responsible for connecting to the server on the base station, reading CO2 measurements, and sending those measurements to the base station.
+
+![System Architecture](../images/system.png)
+
+todo: Update the system architecture to replace BLE with wifi and to add Raspberry Pi symbols
+
+![Layout of Individual Sensor](../images/sensor.png)
+
+Note: The CO2 sensor shown in the Fritzing diagram above does not match the actual part and is only meant to give a general sense of the design.
+
+todo: Add flow charts or UML activity diagrams of the client and server code
 
 
 ## Implementation Details
@@ -38,6 +47,16 @@ research papers you referred to, data structure and protocol choices, etc. You s
 provide at least an informal list of citations of all these external materials that went into
 your project."
 
+Ideas
+
+* Pictures of the actual sensors (Devin's and Eric's versions)
+* Picture of the hub
+* Links to websites of parts and technologies used
+* Talk through how we chose the uC (Pico vs Arduino) and CO2 sensor (CO2 vs eCO2)
+* Talk through how we chose a Raspberry Pi Pico dev language (Python vs C)
+* Talk through how we chose the networking technology (wifi over BLE)
+* Talk through how we chose the web technology (Flask?)
+
 
 ## Results
 
@@ -45,6 +64,21 @@ todo: "So, how did things turn out? You can provide performance results, experie
 you had interacting with it, etc. Also talk about what the takeaway is - why should we
 care about your results? And, it is ok for things to go wrong - what did not go right in your
 project, what was hard and what lessons did you learn?"
+
+Ideas
+
+* Talk about price (compared to CO2 sensor mentioned in the motivation section) (see the BOM in the repo README)
+* Talk about productionization
+  * Refactor into wall wart with a custom PCB and protective case
+  * Solution for configuring IP address of server in each sensor
+  * Drive down price with economies of scale and resource usage optimization (e.g. could use a cheaper Pi with less RAM for the hub)
+* Talk about changing our design from BLE to wifi
+  * Since sensors are wall powered instead of battery powered, power usage was not as high a priority as we initially thought in our proposal
+  * The wifi connection was easier to implement in code and we suspect it will be more user friendly as well
+* Talk about proposal timeline vs reality
+  * Initial design took longer than expect? (lots of options to choose between)
+  * HW bring up went more smoothly than expected and no 2nd prototype was needed
+  * Etc.
 
 
 ## Demo Videos
@@ -65,7 +99,7 @@ Ideas
 https://github.com/EricSchrock/co2-monitor
 
 
-## What We Learned
+## What We Learned (move to results section?)
 
 ### Eric
 
