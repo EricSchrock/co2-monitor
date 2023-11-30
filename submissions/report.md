@@ -5,6 +5,7 @@ urlcolor: cyan
 ---
 
 ## Team
+
 * Eric Schrock (ejs9)
 * Devin Schmitz (devinms3)
 
@@ -57,6 +58,11 @@ Ideas
 * Eric?: Demo sensor HW and bring up (talk through HW design and demo hello.py)
 * Eric? (prettier sensors): Demo sensor installation and connection to the server (talk through sensor LED transitions and show server and data logs)
 * Devin?: Demo website with live and historical data
+
+
+## Project Repository
+
+https://github.com/EricSchrock/co2-monitor
 
 
 ## What We Learned
