@@ -1,6 +1,16 @@
 # Sensor Setup
 
-TODO
+Modify `sensor/config.py` to set `SSID` and `PWD` to match the wifi network
+your server is connected to. Set `IP` to the IP of the server and choose a
+`PORT` number.
+
+Save `sensor/config.py`, `sensor/ens160.py`, and `sensor/main.py` to the Raspberry
+Pi Pico WH on each sensor. One way to do this is with the [Thonny](https://thonny.org/)
+editor. The Pico will run `main.py` on power on.
+
+Plug all your sensors into power. The LED on the Pico will blink until a wifi
+connection is complete and then stay on until it connects to the server. Then
+it will blink each time data is transmitted.
 
 # Server Setup
 
@@ -17,6 +27,8 @@ connected to the system.
 ```sh
 python3 -m server
 ```
+
+The server log and the CO2 data received will be stored in `~/.co2_data`.
 
 # Web Viewer Setup
 
