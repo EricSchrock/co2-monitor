@@ -79,6 +79,12 @@ Ideas
   * Initial design took longer than expect? (lots of options to choose between)
   * HW bring up went more smoothly than expected and no 2nd prototype was needed
   * Etc.
+* Talk about what we could see in the data
+  * sleep cycles
+  * wake times
+  * movement between rooms
+  * opened windows
+  * etc.
 
 
 ## Demo Videos
@@ -112,6 +118,7 @@ Ideas
 * Networking via the Python sockets lib
 * Web development using Flask
 * Using the Raspberry Pi Pico WH
+* Importance of CO2 levels to health
 
 
 ### Devin
