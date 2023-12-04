@@ -25,10 +25,17 @@ connected to the system.
 ##  Run Server
 
 ```sh
-python3 -m server
+python3 server/server.py
 ```
 
-The server log and the CO2 data received will be stored in `~/.co2_data`.
+The server log and the CO2 data received will be stored in `~/.co2_data`. Add
+the following line to `/etc/rc.local` to start the server on power on.
+
+```sh
+python3 /home/<user>/co2-monitor/src/server/server.py &
+```
+
+This assumes you have this repo checked out in your home directory.
 
 # Web Viewer Setup
 

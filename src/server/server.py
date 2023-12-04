@@ -5,8 +5,8 @@ import logging
 import atexit
 from pathlib import Path
 
-import server.config as config
-import server.data_writer as data_writer
+import config
+import data_writer
 
 log_file = Path.home()/'.co2_data'/'server.log'
 log_file.parent.mkdir(exist_ok=True)
