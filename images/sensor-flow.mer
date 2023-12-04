@@ -1,0 +1,10 @@
+flowchart TD
+    Start((Start)) --> wifi[Connect to wifi]
+    wifi --> sensor[Connect to sensor]
+    sensor --> socket{Socket open?}
+    socket -->|Yes| read[Read CO2 level]
+    read --> send[Send CO2 data]
+    send --> socket
+    socket -->|No| open[Open socket]
+    open --> register[Register device]
+    register --> socket

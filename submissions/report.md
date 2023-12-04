@@ -30,13 +30,15 @@ Each sensor consists of a Raspberry Pi Pico WH connected to a CO2 sensor over I2
 
 ![System Architecture](../images/system.png)
 
-todo: Update the system architecture to replace BLE with wifi and to add Raspberry Pi symbols
-
-![Layout of Individual Sensor](../images/sensor.png)
+![Sensor Layout](../images/sensor.png)
 
 Note: The CO2 sensor shown in the Fritzing diagram above does not match the actual part and is only meant to give a general sense of the design.
 
-todo: Add flow charts or UML activity diagrams of the client and server code
+![Sensor Flow Chart](../images/sensor-flow.png)
+
+todo: Add a high-level diagram of the server code (details belong in the next section)
+
+todo: Add a high-level diagram of the website code (details belong in the next section)
 
 
 ## Implementation Details
@@ -119,6 +121,7 @@ Ideas
 * Web development using Flask
 * Using the Raspberry Pi Pico WH
 * Importance of CO2 levels to health
+* Configuring Linux startup scripts
 
 
 ### Devin
