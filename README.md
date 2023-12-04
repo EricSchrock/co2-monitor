@@ -1,6 +1,6 @@
 # CO2 Monitor
 
-The goal of this project is to create a network of CO2 sensors for indoor air quality monitoring. See our [project proposal](https://github.com/EricSchrock/co2-monitor/blob/main/submissions/proposal.pdf) for more detail on our motivation and goals.
+The goal of this project is to create a network of CO2 sensors for indoor air quality monitoring. See our [project proposal](https://github.com/EricSchrock/co2-monitor/blob/main/submissions/proposal.pdf) and [project report](https://github.com/EricSchrock/co2-monitor/blob/main/submissions/report.pdf) for more detail on our motivation, goals, design, and results.
 
 
 &nbsp;
@@ -76,14 +76,14 @@ Hardware
 Software
   - [x] Sensor readings displayed on sensor unit (via debugger, attached LCD, etc.)
   - [x] Sensor readings displayed on base station (over wifi)
-  - [ ] Sensor readings displayed on locally hosted website served from the base station
-    - [ ] Live readings
-    - [ ] Historical trends
-    - [ ] Multiple sensors
-  - [ ] Diagrams (flow charts, activity diagrams, and/or sequence diagram)
-    - [ ] Sensor unit (sensor.py)
-    - [ ] Base station (server.py)
-    - [ ] Whole system
+  - [x] Sensor readings displayed on locally hosted website served from the base station
+    - [x] Live readings
+    - [x] Historical trends
+    - [x] Multiple sensors
+  - [x] Diagrams (flow charts, activity diagrams, and/or sequence diagram)
+    - [x] Sensor unit (sensor.py)
+    - [x] Base station (server.py)
+    - [x] Whole system
 
 &nbsp;
 ## Resources
