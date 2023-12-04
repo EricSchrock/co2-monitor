@@ -30,7 +30,7 @@ while True:
             led.on()
             client.sendall(str(sensor.eco2()).encode())
             led.off()
-            sleep(5)
+            sleep(30)
     except OSError:
         client.close()
         led.on()
