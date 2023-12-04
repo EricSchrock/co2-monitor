@@ -1,23 +1,20 @@
-<mxfile host="app.diagrams.net" modified="2023-10-03T03:39:10.624Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.43" etag="jcrak87OMfiy0gig2OmU" version="22.0.1" type="device">
+<mxfile host="app.diagrams.net" modified="2023-12-04T04:00:18.971Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="v2WLqEkPy_ixAoFY7G0Z" version="22.1.5" type="device">
   <diagram name="Page-1" id="iX4gXUbT2WlzyU6pbDdY">
-    <mxGraphModel dx="1042" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1426" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="98foLCT4dFzrkUpJzd-V-31" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="160" y="200" width="180" height="263" as="geometry" />
+          <mxGeometry x="160" y="200" width="193.7" height="263" as="geometry" />
         </mxCell>
         <mxCell id="98foLCT4dFzrkUpJzd-V-12" value="Raspberry Pi 4B" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" parent="98foLCT4dFzrkUpJzd-V-31" vertex="1">
           <mxGeometry width="180" height="160" as="geometry" />
         </mxCell>
         <mxCell id="98foLCT4dFzrkUpJzd-V-1" value="Wi-Fi" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.wifi;pointerEvents=1" parent="98foLCT4dFzrkUpJzd-V-31" vertex="1">
-          <mxGeometry x="10.300000000000011" y="110" width="29.7" height="21" as="geometry" />
-        </mxCell>
-        <mxCell id="98foLCT4dFzrkUpJzd-V-3" value="BLE" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.bluetooth;pointerEvents=1" parent="98foLCT4dFzrkUpJzd-V-31" vertex="1">
-          <mxGeometry x="150" y="102.20000000000005" width="15" height="28.799999999999997" as="geometry" />
+          <mxGeometry x="40.000000000000014" y="110" width="29.7" height="21" as="geometry" />
         </mxCell>
         <mxCell id="98foLCT4dFzrkUpJzd-V-24" value="USB Power" style="shape=mxgraph.signs.tech.usb;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" parent="98foLCT4dFzrkUpJzd-V-31" vertex="1">
-          <mxGeometry x="80" y="92" width="20" height="39" as="geometry" />
+          <mxGeometry x="120" y="92" width="20" height="39" as="geometry" />
         </mxCell>
         <mxCell id="98foLCT4dFzrkUpJzd-V-30" value="" style="group" parent="98foLCT4dFzrkUpJzd-V-31" vertex="1" connectable="0">
           <mxGeometry x="2" y="20" width="162" height="67" as="geometry" />
@@ -51,11 +48,11 @@
             <mxPoint x="-2" y="-4" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="98foLCT4dFzrkUpJzd-V-35" value="BLE" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.bluetooth;pointerEvents=1" parent="98foLCT4dFzrkUpJzd-V-39" vertex="1">
-          <mxGeometry x="20" y="40.700000000000045" width="15" height="28.799999999999997" as="geometry" />
-        </mxCell>
         <mxCell id="98foLCT4dFzrkUpJzd-V-37" value="USB Power" style="shape=mxgraph.signs.tech.usb;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" parent="98foLCT4dFzrkUpJzd-V-39" vertex="1">
           <mxGeometry x="70" y="30.5" width="20" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="xbqdvlsmKH_zBcxjrOW8-2" value="Wi-Fi" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.wifi;pointerEvents=1" vertex="1" parent="98foLCT4dFzrkUpJzd-V-39">
+          <mxGeometry x="10" y="48.5" width="29.7" height="21" as="geometry" />
         </mxCell>
         <mxCell id="98foLCT4dFzrkUpJzd-V-40" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="400" y="310" width="210" height="100" as="geometry" />
@@ -74,11 +71,11 @@
             <mxPoint x="-2" y="-4" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="98foLCT4dFzrkUpJzd-V-45" value="BLE" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.bluetooth;pointerEvents=1" parent="98foLCT4dFzrkUpJzd-V-40" vertex="1">
-          <mxGeometry x="20" y="40.700000000000045" width="15" height="28.799999999999997" as="geometry" />
-        </mxCell>
         <mxCell id="98foLCT4dFzrkUpJzd-V-46" value="USB Power" style="shape=mxgraph.signs.tech.usb;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" parent="98foLCT4dFzrkUpJzd-V-40" vertex="1">
           <mxGeometry x="70" y="30.5" width="20" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="xbqdvlsmKH_zBcxjrOW8-1" value="Wi-Fi" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.wifi;pointerEvents=1" vertex="1" parent="98foLCT4dFzrkUpJzd-V-40">
+          <mxGeometry x="10" y="48.5" width="29.7" height="21" as="geometry" />
         </mxCell>
         <mxCell id="98foLCT4dFzrkUpJzd-V-47" value="Sensor Network" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" parent="1" vertex="1">
           <mxGeometry x="435" y="100" width="145" height="30" as="geometry" />
