@@ -41,11 +41,11 @@ def image(date: str, sensor: str):
     if sensor:
         ax.set_title(sensors.get(sensor))
         time, ppm = load(date_dir/f'{sensor}.csv')
-        ax.plot(time, ppm)
+        ax.scatter(time, ppm, s=0.5)
     else:
         for sensor in sensors:
             time, ppm = load(date_dir/f'{sensor}.csv')
-            ax.plot(time, ppm, label=sensors.get(sensor))
+            ax.scatter(time, ppm, s=0.5, label=sensors.get(sensor))
         ax.legend()
 
     buf = io.BytesIO()
