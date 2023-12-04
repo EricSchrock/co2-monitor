@@ -35,6 +35,13 @@ Add the following line to `/etc/rc.local` to start the server on power on.
 python3 /<full>/<path>/<to>/<repo>/co2-monitor/src/server/server.py &
 ```
 
+If you have issues with the server dying after a few hours, schedule a reboot
+every hour by adding the `0 * * * * root reboot` cron job.
+
+```sh
+sudo nano /etc/crontab`
+```
+
 # Web Viewer Setup
 
 ## Create and activate the venv
