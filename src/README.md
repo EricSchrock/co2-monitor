@@ -20,7 +20,8 @@ Modify the file `server/config.py` to set the Server IP address and Port.
 These values must match the configuration hardcoded in the sensors.
 
 Additionally, set the `SENSORS` value to the number of sensors that will be
-connected to the system.
+connected to the system and set the `LOG_PATH` to the full path desired for log
+output.
 
 ##  Run Server
 
@@ -28,14 +29,11 @@ connected to the system.
 python3 server/server.py
 ```
 
-The server log and the CO2 data received will be stored in `~/.co2_data`. Add
-the following line to `/etc/rc.local` to start the server on power on.
+Add the following line to `/etc/rc.local` to start the server on power on.
 
 ```sh
-python3 /home/<user>/co2-monitor/src/server/server.py &
+python3 /<full>/<path>/<to>/<repo>/co2-monitor/src/server/server.py &
 ```
-
-This assumes you have this repo checked out in your home directory.
 
 # Web Viewer Setup
 

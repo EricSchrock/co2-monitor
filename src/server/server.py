@@ -8,7 +8,7 @@ from pathlib import Path
 import config
 import data_writer
 
-log_file = Path.home()/'.co2_data'/'server.log'
+log_file = Path(config.LOG_PATH)/'server.log'
 log_file.parent.mkdir(exist_ok=True)
 logging.basicConfig(filename=log_file, datefmt='%Y-%m-%d %H:%M:%S',
                     format='%(asctime)s, %(message)s', level=logging.INFO)

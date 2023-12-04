@@ -2,7 +2,9 @@ from datetime import datetime, timedelta
 from pathlib import Path
 import atexit
 
-_data_dir = Path.home()/'.co2_data'
+import config
+
+_data_dir = Path(config.LOG_PATH)
 _files = {}
 
 @atexit.register
