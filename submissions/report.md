@@ -85,35 +85,33 @@ Ideas
   * Etc.
 
 
-### CO2 Data Analysis (Eric)
+\pagebreak
+### CO2 Data Analysis
 
-One question we had was whether our sensors would be accurate enough to provide useful data. They very much were! For example, below are CO2 readings from my home from December 4th, 2023. The data does not start until 11 AM, but you can see the bedroom CO2 levels dropping from their nighttime highs. You can also see the CO2 levels in the kitchen jump between 12 PM and 1 PM when my wife and I ate lunch together.
+One question we had was whether our sensors would be accurate enough to provide useful data. We found that the data trends were reliable enough to interpret and act on. For example, below is around thirteen hours of CO2 data from three different rooms. Below that is a list tying trends in the data to my (Eric's) activity that day.
 
-![CO2 Data from Eric's Home (12/4/23)](../images/eric-dec-4.png)
+![CO2 Data from Eric's Home (12/4/23)](../images/eric-dec-4.png){width=90%}
 
-todo (Eric): Update with full day of data. Add any notes on data after 9:30 PM.
+1. 11 AM - 2 PM: The bedroom CO2 level drops from its nighttime high.
+2. 12 - 1 PM: The kitchen CO2 level jumps as my wife and I eat lunch.
+3. 1 - 6:15 PM: The bedroom sits empty and has the lowest CO2 level. I sit at my desk in my office and my wife moves around the kitchen and adjoining living room. The kitchen CO2 level is higher than the office CO2 level because humans breath out more CO2 when we are active.
+4. 6:15 PM: The kitchen CO2 level spikes when we vent the pressure cooker and then dissipate to the rest of the house, leaving every room at a higher CO2 level.
+5. 6:30 - 7 PM: The kitchen CO2 level jumps as my wife and I eat supper.
+6. 7 - 9:30 PM: My wife leaves for time with friends and I return to my office. The kitchen CO2 level drops below that of the office.
+7. 8:15 PM: I briefly open a window in my office. The office CO2 level drops to the minimum sensor value of 400 ppm, but jumps back up as soon as I close the window.
+8. 8:30 - 8:45 PM: I open a window in my office for 15 minutes. The office CO2 level again drops to the minimum, but jumps back as soon as the window is closed.
+9. 9:30 - 10:15 PM: My wife returns and we spend time together in the living room, near the kitchen. The kitchen CO2 level jumps.
+10. 10:15 PM: We go to bed. The kitchen CO2 level drops and the bedroom CO2 level jumps.
 
-Overall, the CO2 levels stayed fairly low unless we were both in the same room. During the afternoon, you can see that the bedroom CO2 levels were the lowest, followed by the office, and then the kitchen. I spent most of the afternoon sitting at my desk in the office and my wife spent large chunks of her afternoon moving around the kitchen or the adjoining living room. We breath out more CO2 when we are active, so it makes sense that the kitchen CO2 levels were higher than the office. Additionally, she was doing things like vacuuming and cleaning that likely stirred up TVOCs into the air, influencing the eCO2 calculation in the sensor.
+The sensors do have a couple issues to keep in mind. First, as explained in the section on implementation details, they are measuring eCO2 which is an estimate of CO2 levels derived from TVOC levels. TVOCs can spike without CO2 spiking. For example, the data above shows a spike in the office CO2 levels at around 8 PM. This was from running a paper shredder near the sensor.
 
-At around 6:15 PM, the kitchen CO2 levels spiked when we vented the pressure cooker and then dissipated to the rest of the house, leaving every room at a higher CO2 level. From 6:30 - 7 PM, the kitchen CO2 levels again spiked as we ate supper together. After supper, my wife left for time with friends and I returned to my office to work on this report. As a result, the kitchen CO2 levels dropped below those of the office.
+Second, the sensor results can occasionally get stuck at a high offset until they are power cycled. The CO2 level in the office jumped significantly the evening of December 4th (above) and remained high into the next day (below). I first tried opening windows throughout the house from 10:15 - 10:30 AM. The other rooms responded to this, but the office CO2 level jumped back up as soon as the windows were closed. At around noon, I power cycled the office sensor.
 
-At about 8 PM, I ran a paper shredder right next to the office CO2 sensor. The spike in the reported CO2 is probably another example of TVOCs driving the CO2 estimate. Soon after that, I opened the office window briefly at 8:15 PM and then for 15 minutes at 8:30 PM. This caused the office CO2 readings to peg to 400 ppm, which is the minimum value the sensor can report. This lines up well with the estimated atmospheric CO2 baseline of 410 ppm.
+![CO2 Data from Eric's Home (12/5/23)](../images/eric-dec-5.png){width=90%}
 
-Overall, the sensor readings lined up well with our activities, giving me confidence that the data is accurate enough to drive decision making (e.g. when to open a window). Additionally, I was pleasantly surprised to see that, on average, the CO2 levels in my home stayed well below the recommended max of 800 ppm.
+Despite these issues, we believe that the sensor data captured is accurate enough to drive decisions such as whether to open windows or whether to invest in a new HVAC that cycles in outdoor air in response to high indoor CO2 levels, as long as the sensor limitations are kept in mind.
 
-
-### CO2 Data Analysis (Devin)
-
-todo (Devin): Talk about what you can see in your data. Perhaps also compare your data to mine.
-
-Ideas
-
-  * sleep cycles
-  * wake times
-  * movement between rooms
-  * opened windows and doors
-  * average levels
-  * etc.
+todo (Devin): Do you have any interesting data or observations to add? How does your data compare to mine?
 
 
 ## Demo Videos
@@ -134,7 +132,7 @@ Ideas
 https://github.com/EricSchrock/co2-monitor
 
 
-## What We Learned (move to results section?)
+## What We Learned
 
 ### Eric
 
