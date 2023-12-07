@@ -92,7 +92,7 @@ research papers you referred to, data structure and protocol choices, etc. You s
 provide at least an informal list of citations of all these external materials that went into
 your project."
 
-todo: Include picture of the Pi in a hub. Include a link to Pi website. Talk about how we chose the Pi (had it already through the class) (otherwise would have chosen cheaper model with less RAM).
+todo: Include picture of the Pi in a hub. Include a link to Pi website. Talk about how we chose the Pi (had it already through the class) (otherwise would have chosen cheaper model with less RAM). Talk about challenges with server process dying (solved with rc.local and cron job).
 
 
 ### Website
@@ -108,6 +108,8 @@ todo: Talk through how we chose the web technology (Flask?). Include link to Fla
 
 ## Results
 
+### Project Objectives
+
 todo: "So, how did things turn out? You can provide performance results, experiences
 you had interacting with it, etc. Also talk about what the takeaway is - why should we
 care about your results? And, it is ok for things to go wrong - what did not go right in your
@@ -116,19 +118,12 @@ project, what was hard and what lessons did you learn?"
 Ideas
 
 * Talk about price (compared to CO2 sensor mentioned in the motivation section) (see the BOM in the repo README)
-* Talk about productionization
-  * Refactor into wall wart with a custom PCB and protective case
-  * Solution for configuring IP address of server in each sensor
   * Drive down price with economies of scale and resource usage optimization (e.g. could use a cheaper Pi with less RAM for the hub)
 * Talk about proposal timeline vs reality
   * Initial design took longer than expect? (lots of options to choose between)
   * HW bring up went more smoothly than expected and no 2nd prototype was needed
   * Etc.
-
-### Hardware Bring Up
-
-
-### Software Development
+* See proposal motivation for other topics to hit on
 
 
 \pagebreak
@@ -155,7 +150,7 @@ Second, the sensor results can occasionally get stuck at a high offset until the
 
 ![CO2 Data from Eric's Home (12/5/23)](../images/eric-dec-5.png){width=90%}
 
-Despite these issues, we believe that the sensor data captured is accurate enough to drive decisions such as whether to open windows or whether to invest in a new HVAC that cycles in outdoor air in response to high indoor CO2 levels, as long as the sensor limitations are kept in mind.
+Despite these issues, we believe that the sensor data captured is accurate enough to drive decisions, such as whether to open windows or whether to invest in a new HVAC that cycles in outdoor air in response to high indoor CO2 levels, as long as the sensor limitations are kept in mind.
 
 todo (Devin): Do you have any interesting data or observations to add? How does your data compare to mine?
 
@@ -164,13 +159,24 @@ todo (Devin): Do you have any interesting data or observations to add? How does 
 
 We recommend watching these videos on a large screen and/or setting your video player to HD/1080p.
 
-todo: Record demo videos (we both need to contribute)
+* [Hardware Demo](TBD)
+* [Website Demo](TBD)
 
-Ideas
+todo (Eric): Record a demo video of how to setup the hardware.
 
-* Eric?: Demo sensor HW and bring up (talk through HW design and demo hello.py)
-* Eric? (prettier sensors): Demo sensor installation and connection to the server (talk through sensor LED transitions and show server and data logs)
-* Devin?: Demo website with live and historical data. Show some of the interesting trends observed in the data.
+* Sensor and base station hardware
+* Installation (https://github.com/EricSchrock/co2-monitor/blob/main/src/README.md)
+* Talk through LED transitions
+* Show server log and CO2 data files
+
+todo (Devin): Record a demo video of how to use the website.
+
+* Installation (https://github.com/EricSchrock/co2-monitor/blob/main/src/README.md)
+* Talk through and demo website features
+  * Date selection
+  * Sensor/room selection
+  * Refresh for latest data
+* Talk through interesting trends observed in the data
 
 
 ## Project Repository
@@ -182,32 +188,25 @@ https://github.com/EricSchrock/co2-monitor
 
 ### Eric
 
-todo: Add a paragraph on things learned. Compare to the things you expected to learn in the project proposal.
+Two of the key skills I learned in this project were networking via the Python sockets library and how to configure Linux using the `/etc/rc.local` file and `cron` jobs. Both were completely new to me and are valuable experiences for the future.
 
-Ideas
+On a different note, I was surprised by how easy it was to get the project up and running on the Raspberry Pi Pico with MicroPython. I'm used to embedded boards being much more painful to bring up. Perhaps some personal projects I thought would be too time consuming are actually in reach!
 
-* Using Python for Embedded applications (MicroPython)
-* Refresher after years without soldering
-* Networking via the Python sockets lib
-* Web development using Flask
-* Using the Raspberry Pi Pico WH
-* Importance of CO2 levels to health
-* Configuring Linux startup scripts (rc.local) and cron jobs
+This project also taught me about the health impacts of high concentrations of CO2 in indoor spaces. This is important knowledge to help me stay sharp. As a remote worker, I can put what I've learned to use by opening my office windows at key times.
 
 
 ### Devin
 
-todo: Add a paragraph on things learned. Compare to the things you expected to learn in the project proposal.
+todo (Devin): Add a paragraph on things learned. Compare to the things you expected to learn in the project proposal.
 
 
 ### If We Had More Time
 
-todo: Write this section.
+If we were to take this project further, we would have three main goals. The first would be to increase the accuracy of the sensor readings, either by tuning them with temperature and humidity readings reported to them by the base station or by automatically power cycling the ENS160 CO2 sensor periodically.
 
-* Increase eCO2 measurement accuracy by tuning the sensors based on temperature and humidity, maybe via values reported to the sensors by the server.
-* Add the ability to save timestamped notes to mark and explain events in the data.
-* Add configurable time intervals to the website.
-* Add more data analysis options to the website (e.g. max or average over the window shown).
+Second, we would expand the functionality of the website. We would add the ability to save timestamped notes to mark and explain phenomena in the data. We would also make the time interval for the display configurable. Additionally, we would add simple statistics, such as the max and average over the selected time interval.
+
+The third goal would be to condense the sensor unit into a wall wart with a protective housing. We would look into 3D printing for the case and into a custom PCB to fit in a smaller form factor.
 
 
 ## Conclusion
