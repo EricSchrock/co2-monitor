@@ -108,22 +108,49 @@ todo: Talk through how we chose the web technology (Flask?). Include link to Fla
 
 ## Results
 
+### Project Timeline
+
+Overall, the project probably took a little over the projected 45 hours. The bookends, the initial design decisions and the project report, took much more time than planned, but the hardware bring up was exceptionally smooth and we did not need the planned second prototype. Our time estimates for the website were about right.
+
+
 ### Project Objectives
 
-todo: "So, how did things turn out? You can provide performance results, experiences
-you had interacting with it, etc. Also talk about what the takeaway is - why should we
-care about your results? And, it is ok for things to go wrong - what did not go right in your
-project, what was hard and what lessons did you learn?"
+At a high level, we met the objective we laid out in our project proposal, which was "to create a network of CO2 sensors with a web interface" to allow "distributed monitoring of indoor air quality." Our proposal also laid out the objectives of "simple, low cost, low energy" sensors.
 
-Ideas
+We met the objective of simple sensors. We avoided extra functionality that would have increased cost and complexity (e.g. multi-function sensors or extra website features). We also kept the setup instructions[^12] simple (for a prototype).
 
-* Talk about price (compared to CO2 sensor mentioned in the motivation section) (see the BOM in the repo README)
-  * Drive down price with economies of scale and resource usage optimization (e.g. could use a cheaper Pi with less RAM for the hub)
-* Talk about proposal timeline vs reality
-  * Initial design took longer than expect? (lots of options to choose between)
-  * HW bring up went more smoothly than expected and no 2nd prototype was needed
-  * Etc.
-* See proposal motivation for other topics to hit on
+[^12]: <https://github.com/EricSchrock/co2-monitor/blob/main/src/README.md>
+
+As our design evolved from a battery powered sensor to a wall powered sensor, we dropped the objective of being low energy. This allowed us to make tradeoffs in favor of simplicity and speed. For example, it allowed us to keep our code simple by using wifi instead of BLE and by not implementing any low power modes. Now that we have a working prototype that has proved it's value, power usage optimization would be a valuable consideration for a second prototype.
+
+We also met the objective of low cost sensors, with each sensor unit costing roughly $40. A productionized sensor unit, benefiting from economies of scale, could cost even less.
+
+The base station prototype is pricier at $88. This is largely because we used the 8 GB Raspberry Pi 4B because it is what we had on hand. Using the 1 GB model would drop the base station cost to $48. A simple website doesn't take much compute power. A productionized version of the base station could use an even cheaper processor. It's even possible that one of the sensor units could function as the server for the rest of the sensor network.
+
+**Sensor Unit**
+
+| Part                   | Price* | Link                                                                                  |
+|------------------------|--------|---------------------------------------------------------------------------------------|
+| Raspberry Pi Pico WH   |  $7.00 | <https://www.pishop.us/product/raspberry-pi-pico-wh/>                                 |
+| 12.5W power supply     |  $8.00 | <https://www.pishop.us/product/raspberry-pi-12-5w-power-supply-us-white/>             |
+| Sparkfun ENS160        | $19.95 | <https://www.sparkfun.com/products/20844>                                             |
+| Half sized bread board |  $4.75 | <https://www.pishop.us/product/half-size-400-pin-diy-breadboard-white/>               |
+| Wires and headers      |  $0.30 |                                                                                       |
+| **Total**              | $40.00 |                                                                                       |
+
+*Price does not include shipping or bulk discounts.
+
+\
+**Base Station**
+
+| Part                   | Price* | Link                                                                       |
+|------------------------|--------|----------------------------------------------------------------------------|
+| Raspberry Pi 4B (8 GB) | $75.00 | <https://www.pishop.us/product/raspberry-pi-4-model-b-8gb/>                |
+| 15W power supply       |  $8.00 | <https://www.pishop.us/product/raspberry-pi-15w-power-supply-us-white/>    |
+| Case                   |  $5.00 | <https://www.pishop.us/product/raspberry-pi-4-case-red-white/>             |
+| **Total**              | $88.00 |                                                                            |
+
+*Price does not include shipping or bulk discounts.
 
 
 \pagebreak
