@@ -43,23 +43,67 @@ todo: Add a high-level diagram of the website code (details belong in the next s
 
 ## Implementation Details
 
+### Sensors
+
+We spent a significant amount of time comparing[^1] different options for the microcontroller on our sensors units. We started our search with six different Arduino variants (five Nano variants and the Micro). We looked at price, availability, breadboard compatibility, power and IO options, and connectivity (wifi, Bluetooth, and BLE). We were leaning towards the Arduino Nano 33 IoT[^2] when we found the Raspberry Pi Pico WH[^3] [^4], which checked all our boxes but for a much cheaper price ($7 vs $27).
+
+[^1]: <https://github.com/EricSchrock/co2-monitor/blob/main/docs/microcontroller.md>
+[^2]: <https://store-usa.arduino.cc/products/arduino-nano-33-iot-with-headers>
+[^3]: <https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html>
+[^4]: <https://www.pishop.us/product/raspberry-pi-pico-wh-pre-soldered-headers>
+
+The Pico comes with both C/C++[^5] and Python[^6] SDKs. We are both embedded C programmers for our day job, so we picked the Python SDK to get some experience with MicroPython[^7]. Additionally, the simplicity of Python fit with a simple prototype on a tight timeline.
+
+[^5]: <https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf>
+[^6]: <https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf>
+[^7]: <https://micropython.org/>
+
+We also considered[^8] multiple CO2 sensors, before settling on the ENS160[^9]. Our criteria were price, availability, breadboard compatibility, and power and IO options.
+
+[^8]: <https://github.com/EricSchrock/co2-monitor/blob/main/docs/co2-sensor.md>
+[^9]: <https://www.sciosense.com/wp-content/uploads/documents/SC-001224-DS-9-ENS160-Datasheet.pdf>
+
+Additionally, we had to consider whether to choose a true CO2 sensor or an equivalent CO2 (eCO2[^10]) sensor. eCO2 sensors don't measure CO2 directly. Instead, they measure total volatile organic components (TVOC) and use that measurement to estimate the CO2 level. eCO2 sensors are much cheaper but are less accurate. We chose to go with an eCO2 sensor, as price is a big factor in our design. Having multiple sensor units allowed us to sanity check the reported values and notice anomalies. Given this, the eCO2 sensor was accurate enough to observe trends and draw conclusions. More on this in the CO2 Data Analysis portion of the Results section.
+
+[^10]: <https://electronics360.globalspec.com/article/17986/what-are-eco2-sensors>
+
+The SparkFun ENS160[^11] came with the option to communicate over I2C or SPI. We chose I2C because it was simpler to implement in MicroPython.
+
+[^11]: <https://www.sparkfun.com/products/20844>
+
+The Pico supports wifi, Bluetooth, and BLE. We initially planned to use BLE to communicate with the server, but implementing wifi communication turned out to be much simpler. Additionally, power usage turned out to be less of a concern than we initially thought because we chose to power the sensor units off wall power instead of batteries.
+
+We chose to connect up the Pico and ENS160 on a half sized breadboard and to power them both through the micro USB port on the Pico. We built both dev units and full prototypes.
+
+![Development Unit](../images/dev-unit.png){width=40%}
+![Full Prototypes](../images/full-prototypes.png){width=60%}
+\begin{figure}[!h]
+\caption{Development Unit (left) and Full Prototypes (right)}
+\end{figure}
+
+The software development for the sensor unit was relatively straight forward. We wrote simple programs to aid hardware bring up, first to blink the Pico LED and then to turn the Pico LED on when we breathed on the CO2 sensor. Then we created a simple program that connects to wifi, connects to the CO2 sensor via I2c, connects to the server, and then periodically reads and reports the CO2 level (see the sensor flow chart above in the Technical Approach section).
+
+
+### Server
+
 todo: "This is where you give the details in your implementation. Talk
 about specific software packages you used, hardware modules, any algorithms or
 research papers you referred to, data structure and protocol choices, etc. You should
 provide at least an informal list of citations of all these external materials that went into
 your project."
 
-Ideas
+todo: Include picture of the Pi in a hub. Include a link to Pi website. Talk about how we chose the Pi (had it already through the class) (otherwise would have chosen cheaper model with less RAM).
 
-* Pictures of the actual sensors (Devin's and Eric's versions)
-* Picture of the hub
-* Links to websites of parts and technologies used
-* Talk through how we chose the uC (Pico vs Arduino) and CO2 sensor (CO2 vs eCO2) [^1]
-* Talk through how we chose a Raspberry Pi Pico dev language (Python vs C)
-* Talk through how we chose the networking technology (wifi over BLE)
-* Talk through how we chose the web technology (Flask?)
 
-[^1]: <https://electronics360.globalspec.com/article/17986/what-are-eco2-sensors>
+### Website
+
+todo: "This is where you give the details in your implementation. Talk
+about specific software packages you used, hardware modules, any algorithms or
+research papers you referred to, data structure and protocol choices, etc. You should
+provide at least an informal list of citations of all these external materials that went into
+your project."
+
+todo: Talk through how we chose the web technology (Flask?). Include link to Flask website.
 
 
 ## Results
@@ -76,13 +120,15 @@ Ideas
   * Refactor into wall wart with a custom PCB and protective case
   * Solution for configuring IP address of server in each sensor
   * Drive down price with economies of scale and resource usage optimization (e.g. could use a cheaper Pi with less RAM for the hub)
-* Talk about changing our design from BLE to wifi
-  * Since sensors are wall powered instead of battery powered, power usage was not as high a priority as we initially thought in our proposal
-  * The wifi connection was easier to implement in code and we suspect it will be more user friendly as well
 * Talk about proposal timeline vs reality
   * Initial design took longer than expect? (lots of options to choose between)
   * HW bring up went more smoothly than expected and no 2nd prototype was needed
   * Etc.
+
+### Hardware Bring Up
+
+
+### Software Development
 
 
 \pagebreak
@@ -140,18 +186,28 @@ todo: Add a paragraph on things learned. Compare to the things you expected to l
 
 Ideas
 
-* Using Python for Embedded applications
+* Using Python for Embedded applications (MicroPython)
 * Refresher after years without soldering
 * Networking via the Python sockets lib
 * Web development using Flask
 * Using the Raspberry Pi Pico WH
 * Importance of CO2 levels to health
-* Configuring Linux startup scripts
+* Configuring Linux startup scripts (rc.local) and cron jobs
 
 
 ### Devin
 
 todo: Add a paragraph on things learned. Compare to the things you expected to learn in the project proposal.
+
+
+### If We Had More Time
+
+todo: Write this section.
+
+* Increase eCO2 measurement accuracy by tuning the sensors based on temperature and humidity, maybe via values reported to the sensors by the server.
+* Add the ability to save timestamped notes to mark and explain events in the data.
+* Add configurable time intervals to the website.
+* Add more data analysis options to the website (e.g. max or average over the window shown).
 
 
 ## Conclusion
