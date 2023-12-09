@@ -17,10 +17,56 @@ We created a distributed network of CO2 sensors that report back via wifi to a c
 
 ## Motivation
 
-todo: "Talk about the importance of this problem. Pretend you are trying to convince someone to give you funding, or purchase what you developed. You may also want to give references/citations here."
+todo: (Eric) Review this. Does it need to change at all? It is copy-paste from
+the proposal, but I slightly modified the final paragraph.
 
-todo: Rehash motivation section from the proposal. Maybe remove "low energy" as a design goal.
+Breathing is one of the most fundamental processes of our lives, but most homes
+are only equipped with smoke and carbon monoxide detectors, which just warn
+against critically dangerous levels of air polution. High levels of pollutants
+like Carbon Dioxide (CO2), particulate matter (PM), and volatile organic
+compounds (VOCs) can go unnoticed, contributing to drowsiness, illness, and
+poor cognitive function, among many other potential poor health
+outcomes[^20][^21][^22].
 
+Large pollutants can be filtered out by a good HVAC or air filtration system,
+but small asphyxiants such as CO2 and VOCs are best managed with proper air
+ventilation. However, the exchange of fresh outdoor air for indoor air works
+against the mission of modern HVAC, door, and window systems, which attempt to
+maintain a consistent internal climate (in spite of the surrounding
+environment) by _avoiding_ the exchange of indoor and outdoor air.
+
+It is easy to open a window during the spring and fall when the weather is
+nice, but knowing when it is necessary to open a window for proper air
+circulation during the cold winter or hot summer can be a challenge. Having a
+window open all the time wastes energy heating excess fresh air, but fatigue
+and headache from poor air quality only exacerbates common ailments like
+seasonal depression.
+
+The first step to balancing this tension is having data. CO2 serves as a good
+proxy for appropriate air ventilation in general. CO2 is a direct byproduct of
+respiration and combustion, so indoor levels rise throughout the day as we
+breath and use gas appliances like stoves, hot water heaters, and furnaces. By
+monitoring indoor CO2 levels, we can have a better idea of when there is
+adequate ventilation and when more fresh air exchange is needed.
+
+However, proper air monitoring requires a distributed network. A single sensor,
+though useful, does not provide a comprehensive picture of the air quality
+throughout a home (especially in homes with poor overall ventilation). A
+network of sensors also reduces inaccuracy due to any single faulty sensor
+reading and keeps the system more robust to sensor failures. Additionally, many
+existing air monitoring solutions are cost prohibitive to deploy across a home,
+with individual sensors costing up to $230[^23] and coming with a list of extra
+and unnecessary features like onboard data processing and display.
+
+We designed a simple, low cost CO2 sensor that can be deployed throughout a
+home for real time monitoring of air quality with a single central hub for
+processing and displaying the data via a convenient web application on the
+local area network.
+
+[^20]: <https://ehp.niehs.nih.gov/doi/10.1289/ehp.1510037>
+[^21]: <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4296077>
+[^22]: <https://www.niehs.nih.gov/health/topics/agents/air-pollution/index.cfm>
+[^23]: <https://www.airthings.com//wave-plus>
 
 ## Technical Approach
 
@@ -224,8 +270,21 @@ This project also taught me about the health impacts of high concentrations of C
 
 ### Devin
 
-todo (Devin): Add a paragraph on things learned. Compare to the things you expected to learn in the project proposal.
+I learned a great deal from working with the hardware in this lab. I soldered
+header pins for the first time. I gained valuable experience reading the ENS160
+datasheet to understand how to read sensor values over I2C. I learned how to
+use `minicom` to view serial data from the Pi Pico and how to prototype
+micropython on the Pi Pico from the interactive micropython REPL.
 
+This project significantly expanded my understanding and confidence in socket
+programming, which I had only just learned in previous class labs. It also
+challenged me to write a safe and robust server application.
+
+Building the webpage may have taught me the most. Weighing different Python web
+frameworks gave great insight into the infrastructure underlying websites and
+web applications that I use on a daily basis. Actually deploying a functional
+web form involved more pieces than I knew and gave me a new respect for web
+development.
 
 ### If We Had More Time
 
