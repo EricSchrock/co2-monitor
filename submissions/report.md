@@ -17,9 +17,6 @@ We created a distributed network of CO2 sensors that report back via wifi to a c
 
 ## Motivation
 
-todo: (Eric) Review this. Does it need to change at all? It is copy-paste from
-the proposal, but I slightly modified the final paragraph.
-
 Breathing is one of the most fundamental processes of our lives, but most homes
 are only equipped with smoke and carbon monoxide detectors, which just warn
 against critically dangerous levels of air polution. High levels of pollutants
@@ -74,11 +71,11 @@ Our overall system consists of a base station connected to a network of sensors 
 
 Each sensor consists of a Raspberry Pi Pico WH connected to a CO2 sensor over I2C. Each sensor runs a client that is responsible for connecting to the server on the base station, reading CO2 measurements, and sending those measurements to the base station.
 
+Note: The CO2 sensor shown in figure 2 does not match the actual part and is only meant to give a general sense of the design.
+
 ![System Architecture](../images/system.png)
 
 ![Sensor Layout](../images/sensor.png)
-
-Note: The CO2 sensor shown in the Fritzing diagram above does not match the actual part and is only meant to give a general sense of the design.
 
 ![Sensor Flowchart](../images/sensor-flow.png)
 
