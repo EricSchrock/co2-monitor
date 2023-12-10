@@ -171,7 +171,7 @@ great examples for integrating charts into a webpage and was already familiar
 to us, so it won out as the best option to meet the goals and timelines of this
 project. Additionally, in brief prototyping, a webpage with a matplotlib image
 reloaded nearly instantaneously, while plotting the same data with Chart.js had
-a noticeable (several second).
+a noticeable (several second) delay.
 
 Finally, we needed to choose a WSGI server to host our web application. We
 considered several of the options on Flask's list of recommended self-hosted
