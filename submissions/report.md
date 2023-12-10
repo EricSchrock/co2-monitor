@@ -140,14 +140,53 @@ todo: Include picture of the Pi in a hub. Include a link to Pi website. Talk abo
 
 ### Website
 
-todo: "This is where you give the details in your implementation. Talk
-about specific software packages you used, hardware modules, any algorithms or
-research papers you referred to, data structure and protocol choices, etc. You should
-provide at least an informal list of citations of all these external materials that went into
-your project."
+Since neither of us has web development experience, we were learning
+everything as we went. This meant simplicity and basic functionality were high
+priorities as we chose software stacks for our web application. We are both
+comfortable with Python, so it made sense to use a backend Python framework. We
+considered two dominant web frameworks: Django[^31] and Flask[^32]. Each has
+pros and cons, and both are widely used in industry. However, we settled on
+Flask for two key reasons. First, it is faster to get a minimal web application
+up and running from scratch in Flask. Second, Flask uses `jinja2`[^37]
+templates by default, which we were already familiar with.
 
-todo: Talk through how we chose the web technology (Flask?). Include link to Flask website.
+From there, the development of the website evolved in stages. First, we setup
+a basic "Hello World" page to verify that we could successfully run our Flask
+application. Then, we upgraded the application to include a request form for a
+date, which we initially just echoed to the webpage. Finally, we updated the
+web app to display the list of CO2 reading times and values for the selected
+date.
 
+At this stage, we had to decide on a software stack to generate the most
+important part of the web application: a chart of the data. We considered
+three options: Chart.js[^33], Matplotlib[^34], and plotlib[^35] with
+WebAssembly[^36]. These three options vary significantly, from the language
+used (Javascript, Python, and Rust respectively) to how they integrate into the
+Flask application. While the Rust and WebAssembly option was interesting to
+explore, WebAssembly is a relatively new technology and doesn't have the same
+level of existing examples and documentation as the more established
+competitors. Chart.js was a compelling option, with support for dynamic and
+interactive charts in a web-native language. However, Matplotlib had a few
+great examples for integrating charts into a webpage and was already familiar
+to us, so it won out as the best option to meet the goals and timelines of this
+project. Additionally, in brief prototyping, a webpage with a matplotlib image
+reloaded nearly instantaneously, while plotting the same data with Chart.js had
+a noticeable (several second).
+
+Finally, we needed to choose a WSGI server to host our web application. We
+considered several of the options on Flask's list of recommended self-hosted
+WSGI servers[^38]. We chose Waitress[^39] because it is a pure Python
+application with no dependencies, which made it easy to include in our project.
+
+[^31]: https://docs.djangoproject.com/en/5.0/
+[^32]: https://flask.palletsprojects.com/en/3.0.x/
+[^33]: https://www.chartjs.org/
+[^34]: https://matplotlib.org/stable/index.html
+[^35]: https://docs.rs/plotlib/latest/plotlib/
+[^36]: https://rustwasm.github.io/
+[^37]: https://jinja.palletsprojects.com/en/3.1.x/templates/
+[^38]: https://flask.palletsprojects.com/en/3.0.x/deploying/
+[^39]: https://docs.pylonsproject.org/projects/waitress/en/stable/
 
 ## Results
 
