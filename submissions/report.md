@@ -129,14 +129,47 @@ The software development for the sensor unit was relatively straight forward. We
 
 ### Server
 
-todo: "This is where you give the details in your implementation. Talk
-about specific software packages you used, hardware modules, any algorithms or
-research papers you referred to, data structure and protocol choices, etc. You should
-provide at least an informal list of citations of all these external materials that went into
-your project."
+In choosing the hardware for the central server, we quickly decided to use the
+Raspberry Pi 4B[^41] that we had both already purchased for earlier labs in the
+class. The Raspberry Pi 4B provides a builtin wifi module to connect to the
+sensor units and sufficient processing power and RAM to host a basic webpage
+and do minimal data processing. In fact, the Raspberry Pi 4B far exceeded our
+basic requirements for a server. If we were going to productionize the system,
+we would explore using a smaller Raspberry Pi with less RAM or potentially an
+even simpler SBC to reduce the cost of the system.
 
-todo: Include picture of the Pi in a hub. Include a link to Pi website. Talk about how we chose the Pi (had it already through the class) (otherwise would have chosen cheaper model with less RAM). Talk about challenges with server process dying (solved with rc.local and cron job).
+![Raspberry Pi Hub (White) Connected to Linksys Router via Ethernet
+  and CO2 Sensor unit via WiFi](../images/pi_server.jpeg){width=70%}
 
+In designing the server software, our goal was simplicity, reliability, and
+minimal dependencies. We wrote the entire server application using just the
+Python standard library. We started with a simple server that could connect to
+one sensor using sockets, using what we had learned from our previous labs.
+Then, we extended the server and our knowledge of sockets programming by
+incorporating a selector[^42] to handle multiple socket connections to
+different sensors. Throughout the server development, we took advantage of the
+ability to create socket pairs on a single device to emulate a sensor network
+locally for debugging, which allowed us to parallelize the sensor and server
+development.
+
+When it came to storing CO2 data, we considered integrating a proper database.
+However, after looking into it, even a simple SQL database[^43] seemed like
+unnecessary overhead and complexity for the data we were storing. We settled on
+storing the data in basic CSV files to make both writing the data and loading
+it for later analysis easy. Our first iteration of data logging had a unique
+file for each sensor, which contained the full date-time timestamp for each CO2
+reading. It quickly became apparent that this was suboptimal for two reasons.
+First, having all CO2 data from one sensor in a single file meant that
+significantly more data would have to be parsed to analyze a small time window
+of data. Second, including the date in every timestamp was a significant
+duplication of data and thus waste of memory. We settled on splitting up the
+data by date instead, so that each day's readings would be stored in a
+directory with a CSV file for each sensor that only contained the timestamps
+for the CO2 readings.
+
+[^41]: https://www.raspberrypi.com/products/raspberry-pi-4-model-b/
+[^42]: https://docs.python.org/3/library/selectors.html
+[^43]: https://docs.python.org/3/library/sqlite3.html
 
 ### Website
 
