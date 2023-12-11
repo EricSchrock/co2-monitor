@@ -294,9 +294,24 @@ Second, the sensor results can occasionally get stuck at a high offset until the
 
 Despite these issues, we believe that the sensor data captured is accurate enough to drive decisions, such as whether to open windows or whether to invest in a new HVAC that cycles in outdoor air in response to high indoor CO2 levels, as long as the sensor limitations are kept in mind.
 
-todo (Devin): Do you have any interesting data or observations to add? How does your data compare to mine?
+Additionally, the data offers some less consequential but still interesting
+insights. For example, the week of Thanksgiving I (Devin) was out of the home,
+and all three CO2 sensors consistently measured low and unchanging CO2 levels.
+This indicates that practically all significant CO2 production in the home is
+linked to my activity in some way, rather than to furnace or hot water heater
+cycles.
 
+![CO2 from Devin's Vacant Home (11/22/23)](../images/devin-nov-22.png){width=80%}
 
+Another interesting pattern I have noticed is a cyclic pattern of rising and
+falling CO2 levels in the bedroom early morning hours. I am not a sleep expert,
+but the cycles appear consistently every night and only in the bedroom, leading
+me to think they may be related to sleep cycles. An interesting future project
+could be to correlate the CO2 data with data from a sleep tracker.
+
+![Cycling CO2 from Devin's Early Morning Bedroom](../images/devin-sleep-cycles.png){width=80%}
+
+\pagebreak
 ## Demo Videos
 
 We recommend watching these videos on a large screen and/or setting your video player to HD/1080p.
