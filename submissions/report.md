@@ -167,9 +167,9 @@ data by date instead, so that each day's readings would be stored in a
 directory with a CSV file for each sensor that only contained the timestamps
 for the CO2 readings.
 
-[^41]: https://www.raspberrypi.com/products/raspberry-pi-4-model-b/
-[^42]: https://docs.python.org/3/library/selectors.html
-[^43]: https://docs.python.org/3/library/sqlite3.html
+[^41]: <https://www.raspberrypi.com/products/raspberry-pi-4-model-b/>
+[^42]: <https://docs.python.org/3/library/selectors.html>
+[^43]: <https://docs.python.org/3/library/sqlite3.html>
 
 ### Website
 
@@ -211,15 +211,15 @@ considered several of the options on Flask's list of recommended self-hosted
 WSGI servers[^38]. We chose Waitress[^39] because it is a pure Python
 application with no dependencies, which made it easy to include in our project.
 
-[^31]: https://docs.djangoproject.com/en/5.0/
-[^32]: https://flask.palletsprojects.com/en/3.0.x/
-[^33]: https://www.chartjs.org/
-[^34]: https://matplotlib.org/stable/index.html
-[^35]: https://docs.rs/plotlib/latest/plotlib/
-[^36]: https://rustwasm.github.io/
-[^37]: https://jinja.palletsprojects.com/en/3.1.x/templates/
-[^38]: https://flask.palletsprojects.com/en/3.0.x/deploying/
-[^39]: https://docs.pylonsproject.org/projects/waitress/en/stable/
+[^31]: <https://docs.djangoproject.com/en/5.0/>
+[^32]: <https://flask.palletsprojects.com/en/3.0.x/>
+[^33]: <https://www.chartjs.org/>
+[^34]: <https://matplotlib.org/stable/index.html>
+[^35]: <https://docs.rs/plotlib/latest/plotlib/>
+[^36]: <https://rustwasm.github.io/>
+[^37]: <https://jinja.palletsprojects.com/en/3.1.x/templates/>
+[^38]: <https://flask.palletsprojects.com/en/3.0.x/deploying/>
+[^39]: <https://docs.pylonsproject.org/projects/waitress/en/stable/>
 
 ## Results
 
@@ -338,7 +338,7 @@ todo (Devin): Record a demo video of how to use the website.
 
 ## Project Repository
 
-https://github.com/EricSchrock/co2-monitor
+<https://github.com/EricSchrock/co2-monitor>
 
 
 ## What We Learned
