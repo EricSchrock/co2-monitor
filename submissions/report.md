@@ -244,28 +244,25 @@ The base station prototype is pricier at $88. This is largely because we used th
 
 **Sensor Unit**
 
-| Part                   | Price* | Link                                                                                  |
-|------------------------|--------|---------------------------------------------------------------------------------------|
-| Raspberry Pi Pico WH   |  $7.00 | <https://www.pishop.us/product/raspberry-pi-pico-wh/>                                 |
-| 12.5W power supply     |  $8.00 | <https://www.pishop.us/product/raspberry-pi-12-5w-power-supply-us-white/>             |
-| Sparkfun ENS160        | $19.95 | <https://www.sparkfun.com/products/20844>                                             |
-| Half sized bread board |  $4.75 | <https://www.pishop.us/product/half-size-400-pin-diy-breadboard-white/>               |
-| Wires and headers      |  $0.30 |                                                                                       |
-| **Total**              | $40.00 |                                                                                       |
+| Part                   | Price[^44] | Link                                                                                  |
+|------------------------|------------|---------------------------------------------------------------------------------------|
+| Raspberry Pi Pico WH   |      $7.00 | <https://www.pishop.us/product/raspberry-pi-pico-wh/>                                 |
+| 12.5W power supply     |      $8.00 | <https://www.pishop.us/product/raspberry-pi-12-5w-power-supply-us-white/>             |
+| Sparkfun ENS160        |     $19.95 | <https://www.sparkfun.com/products/20844>                                             |
+| Half sized bread board |      $4.75 | <https://www.pishop.us/product/half-size-400-pin-diy-breadboard-white/>               |
+| Wires and headers      |     ~$0.30 |                                                                                       |
+| **Total**              |     $40.00 |                                                                                       |
 
-*Price does not include shipping or bulk discounts.
-
-\
 **Base Station**
 
-| Part                   | Price* | Link                                                                       |
-|------------------------|--------|----------------------------------------------------------------------------|
-| Raspberry Pi 4B (8 GB) | $75.00 | <https://www.pishop.us/product/raspberry-pi-4-model-b-8gb/>                |
-| 15W power supply       |  $8.00 | <https://www.pishop.us/product/raspberry-pi-15w-power-supply-us-white/>    |
-| Case                   |  $5.00 | <https://www.pishop.us/product/raspberry-pi-4-case-red-white/>             |
-| **Total**              | $88.00 |                                                                            |
+| Part                   | Price[^44] | Link                                                                       |
+|------------------------|------------|----------------------------------------------------------------------------|
+| Raspberry Pi 4B (8 GB) |     $75.00 | <https://www.pishop.us/product/raspberry-pi-4-model-b-8gb/>                |
+| 15W power supply       |      $8.00 | <https://www.pishop.us/product/raspberry-pi-15w-power-supply-us-white/>    |
+| Case                   |      $5.00 | <https://www.pishop.us/product/raspberry-pi-4-case-red-white/>             |
+| **Total**              |     $88.00 |                                                                            |
 
-*Price does not include shipping or bulk discounts.
+[^44]: Price does not include shipping or bulk discounts.
 
 
 \pagebreak
