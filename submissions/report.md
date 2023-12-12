@@ -169,6 +169,8 @@ data by date instead, so that each day's readings would be stored in a
 directory with a CSV file for each sensor that only contained the timestamps
 for the CO2 readings.
 
+One challenge I (Eric) faced was the server process on the Pi dying every few hours. My solution was to reboot the Pi every hour via the Linux `cron` utility. I edited `/etc/rc.local` to restart the server on each reboot, allowing me to capture data over long periods without babysitting (e.g overnight). Devin's system never exhibited this issue.
+
 [^41]: <https://www.raspberrypi.com/products/raspberry-pi-4-model-b/>
 [^42]: <https://docs.python.org/3/library/selectors.html>
 [^43]: <https://docs.python.org/3/library/sqlite3.html>
