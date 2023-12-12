@@ -72,11 +72,11 @@ Our overall system consists of a base station connected to a network of sensors 
 
 Each sensor consists of a Raspberry Pi Pico WH connected to a CO2 sensor over I2C. Each sensor runs a client that is responsible for connecting to the server on the base station, reading CO2 measurements, and sending those measurements to the base station.
 
-Note: The CO2 sensor shown in figure 2 does not match the actual part and is only meant to give a general sense of the design.
-
 ![System Architecture](../images/system.png)
 
-![Sensor Layout](../images/sensor.png)
+![Sensor Layout[^52]](../images/sensor.png)
+
+[^52]: The CO2 sensor shown in figure 2 does not match the actual part and is only meant to give a general sense of the design.
 
 ![Sensor Flowchart](../images/sensor-flow.png)
 
@@ -284,7 +284,7 @@ The base station prototype is pricier at $88. This is largely because we used th
 \pagebreak
 ### CO2 Data Analysis
 
-One question we had was whether our sensors would be accurate enough to provide useful data. We found that the data trends were reliable enough to interpret and act on. For example, figure 6 shows around thirteen hours of CO2 data that is readily attributable to the day's activities.
+One question we had was whether our sensors would be accurate enough to provide useful data. We found that the data trends were reliable enough to interpret and act on. For example, figure 8 shows around thirteen hours of CO2 data that is readily attributable to the day's activities.
 
 ![CO2 Data from Eric's Home (12/4/23)](../images/eric-dec-4.png){width=70%}
 
@@ -301,13 +301,13 @@ One question we had was whether our sensors would be accurate enough to provide 
 
 The sensors do have a couple issues to keep in mind. First, as explained in the section on implementation details, they are measuring eCO2 which is an estimate of CO2 levels derived from TVOC levels. TVOCs can spike without CO2 spiking. For example, the data above shows a spike in the office CO2 levels at around 8 PM. This was from running a paper shredder near the sensor.
 
-Second, the sensor results can occasionally get stuck at a high offset until they are power cycled. The CO2 level in the office jumped significantly the evening of December 4th (figure 6) and remained high into the next day (figure 7). I first tried opening windows throughout the house from 10:15 - 10:30 AM. The other rooms responded to this, but the office CO2 level jumped back up as soon as the windows were closed. At around noon, I power cycled the office sensor.
+Second, the sensor results can occasionally get stuck at a high offset until they are power cycled. The CO2 level in the office jumped significantly the evening of December 4th (figure 8) and remained high into the next day (figure 9). I first tried opening windows throughout the house from 10:15 - 10:30 AM. The other rooms responded to this, but the office CO2 level jumped back up as soon as the windows were closed. At around noon, I power cycled the office sensor.
 
 ![CO2 Data from Eric's Home (12/5/23)](../images/eric-dec-5.png){width=70%}
 
 There were other interesting trends we observed in the data.
 For example, the week of Thanksgiving I (Devin) was out of the home,
-and all three CO2 sensors consistently measured low and unchanging CO2 levels (figure 8).
+and all three CO2 sensors consistently measured low and unchanging CO2 levels (figure 10).
 This indicates that practically all significant CO2 production in the home is
 linked to my activity in some way, rather than to furnace or hot water heater
 cycles.
@@ -315,7 +315,7 @@ cycles.
 ![CO2 from Devin's Vacant Home (11/22/23)](../images/devin-nov-22.png){width=70%}
 
 Another pattern I noticed is a cyclic rising and
-falling CO2 levels in the bedroom during early morning hours (figure 9).
+falling CO2 levels in the bedroom during early morning hours (figure 11).
 The cycles appear every night and only in the bedroom, leading
 me to wonder if they are related to sleep cycles.
 Correlating the data to a sleep tracker would be a fascinating follow on project.
