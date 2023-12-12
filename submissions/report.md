@@ -140,8 +140,11 @@ basic requirements for a server. If we were going to productionize the system,
 we would explore using a smaller Raspberry Pi with less RAM or potentially an
 even simpler SBC to reduce the cost of the system.
 
-![Raspberry Pi Hub (White) Connected to Linksys Router via Ethernet
-  and CO2 Sensor unit via WiFi](../images/pi_server.jpeg){width=70%}
+![Devin](../images/pi_server.jpeg){width=55%}
+![Eric](../images/pi-hub.png){width=44%}
+\begin{figure}[!h]
+\caption{Raspberry Pi Hubs Connected to Sensors via Wifi}
+\end{figure}
 
 In designing the server software, our goal was simplicity, reliability, and
 minimal dependencies. We wrote the entire server application using just the
