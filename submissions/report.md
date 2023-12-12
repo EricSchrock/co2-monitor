@@ -65,6 +65,7 @@ local area network.
 [^22]: <https://www.niehs.nih.gov/health/topics/agents/air-pollution/index.cfm>
 [^23]: <https://www.airthings.com//wave-plus>
 
+
 ## Technical Approach
 
 Our overall system consists of a base station connected to a network of sensors over wifi. The base station is a Raspberry Pi 4B running a server. Sensors connect to the server and periodically report CO2 measurements. The base station then presents those measurements on a website available on the local area network.
@@ -79,11 +80,12 @@ Note: The CO2 sensor shown in figure 2 does not match the actual part and is onl
 
 ![Sensor Flowchart](../images/sensor-flow.png)
 
-todo: Add a high-level diagram of the server code (details belong in the next section)
+![Server Flowchart](../images/sensor-flow.png)
 
-todo: Add a high-level diagram of the website code (details belong in the next section)
+![Website Host Flowchart](../images/sensor-flow.png)
 
 
+\pagebreak
 ## Implementation Details
 
 ### Sensors
@@ -171,6 +173,7 @@ for the CO2 readings.
 [^42]: <https://docs.python.org/3/library/selectors.html>
 [^43]: <https://docs.python.org/3/library/sqlite3.html>
 
+
 ### Website
 
 Since neither of us has web development experience, we were learning
@@ -220,6 +223,7 @@ application with no dependencies, which made it easy to include in our project.
 [^37]: <https://jinja.palletsprojects.com/en/3.1.x/templates/>
 [^38]: <https://flask.palletsprojects.com/en/3.0.x/deploying/>
 [^39]: <https://docs.pylonsproject.org/projects/waitress/en/stable/>
+
 
 ## Results
 
@@ -324,22 +328,6 @@ We recommend watching these videos on a large screen and/or setting your video p
 * [Hardware Demo](TBD)
 * [Website Demo](TBD)
 
-todo (Eric): Record a demo video of how to setup the hardware.
-
-* Sensor and base station hardware
-* Installation (https://github.com/EricSchrock/co2-monitor/blob/main/src/README.md)
-* Talk through LED transitions
-* Show server log and CO2 data files
-
-todo (Devin): Record a demo video of how to use the website.
-
-* Installation (https://github.com/EricSchrock/co2-monitor/blob/main/src/README.md)
-* Talk through and demo website features
-  * Date selection
-  * Sensor/room selection
-  * Refresh for latest data
-* Talk through interesting trends observed in the data
-
 
 ## Project Repository
 
@@ -375,6 +363,7 @@ web applications that I use on a daily basis. Actually deploying a functional
 web form involved more pieces than I knew and gave me a new respect for web
 development.
 
+
 ### If We Had More Time
 
 If we were to take this project further, we would have three main goals. The first would be to increase the accuracy of the sensor readings, either by tuning them with temperature and humidity readings reported to them by the base station or by automatically power cycling the ENS160 CO2 sensor periodically.
@@ -387,3 +376,25 @@ The third goal would be to condense the sensor unit into a wall wart with a prot
 ## Conclusion
 
 In conclusion, we accomplished the high level goal of our project, to prototype a distributed, networked, and affordable CO2 monitoring solution. Along the way, we tried new technologies, built new skills, and gained a deeper understanding of the quality of the air in our homes and of how it impacts our health.
+
+
+
+todo: Add a high-level diagram of the server code (replace placeholder)
+
+todo: Add a high-level diagram of the website code (replace placeholder)
+
+todo (Eric): Record a demo video of how to setup the hardware.
+
+* Sensor and base station hardware
+* Installation (https://github.com/EricSchrock/co2-monitor/blob/main/src/README.md)
+* Talk through LED transitions
+* Show server log and CO2 data files
+
+todo (Devin): Record a demo video of how to use the website.
+
+* Installation (https://github.com/EricSchrock/co2-monitor/blob/main/src/README.md)
+* Talk through and demo website features
+  * Date selection
+  * Sensor/room selection
+  * Refresh for latest data
+* Talk through interesting trends observed in the data
