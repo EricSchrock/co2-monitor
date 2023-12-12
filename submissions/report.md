@@ -275,45 +275,46 @@ The base station prototype is pricier at $88. This is largely because we used th
 \pagebreak
 ### CO2 Data Analysis
 
-One question we had was whether our sensors would be accurate enough to provide useful data. We found that the data trends were reliable enough to interpret and act on. For example, below is around thirteen hours of CO2 data from three different rooms. Below that is a list tying trends in the data to my (Eric's) activity that day.
+One question we had was whether our sensors would be accurate enough to provide useful data. We found that the data trends were reliable enough to interpret and act on. For example, figure 6 shows around thirteen hours of CO2 data that is readily attributable to the day's activities.
 
-![CO2 Data from Eric's Home (12/4/23)](../images/eric-dec-4.png){width=90%}
+![CO2 Data from Eric's Home (12/4/23)](../images/eric-dec-4.png){width=70%}
 
-1. 11 AM - 2 PM: The bedroom CO2 level drops from its nighttime high.
-2. 12 - 1 PM: The kitchen CO2 level jumps as my wife and I eat lunch.
-3. 1 - 6:15 PM: The bedroom sits empty and has the lowest CO2 level. I sit at my desk in my office and my wife moves around the kitchen and adjoining living room. The kitchen CO2 level is higher than the office CO2 level because humans breath out more CO2 when we are active.
-4. 6:15 PM: The kitchen CO2 level spikes when we vent the pressure cooker and then dissipate to the rest of the house, leaving every room at a higher CO2 level.
-5. 6:30 - 7 PM: The kitchen CO2 level jumps as my wife and I eat supper.
-6. 7 - 9:30 PM: My wife leaves for time with friends and I return to my office. The kitchen CO2 level drops below that of the office.
+1. 11 AM - 2 PM: Bedroom CO2 level drops from its nighttime high.
+2. 12 - 1 PM: Kitchen CO2 level jumps as my wife and I (Eric) eat lunch.
+3. 1 - 6:15 PM: Bedroom sits empty and has the lowest CO2 level. I sit at my desk in my office and my wife moves around the kitchen and adjoining living room. The kitchen CO2 level is higher than the office CO2 level because humans breath out more CO2 when we are active.
+4. 6:15 PM: Kitchen CO2 level spikes when we vent the pressure cooker and then dissipate to the rest of the house.
+5. 6:30 - 7 PM: Kitchen CO2 level jumps as my wife and I eat supper.
+6. 7 - 9:30 PM: My wife leaves for time with friends and I return to my office. Kitchen CO2 level drops below that of the office.
 7. 8:15 PM: I briefly open a window in my office. The office CO2 level drops to the minimum sensor value of 400 ppm, but jumps back up as soon as I close the window.
 8. 8:30 - 8:45 PM: I open a window in my office for 15 minutes. The office CO2 level again drops to the minimum, but jumps back as soon as the window is closed.
 9. 9:30 - 10:15 PM: My wife returns and we spend time together in the living room, near the kitchen. The kitchen CO2 level jumps.
-10. 10:15 PM: We go to bed. The kitchen CO2 level drops and the bedroom CO2 level jumps.
+10. 10:15 PM: We go to bed. Kitchen CO2 level drops and bedroom CO2 level jumps.
 
 The sensors do have a couple issues to keep in mind. First, as explained in the section on implementation details, they are measuring eCO2 which is an estimate of CO2 levels derived from TVOC levels. TVOCs can spike without CO2 spiking. For example, the data above shows a spike in the office CO2 levels at around 8 PM. This was from running a paper shredder near the sensor.
 
-Second, the sensor results can occasionally get stuck at a high offset until they are power cycled. The CO2 level in the office jumped significantly the evening of December 4th (above) and remained high into the next day (below). I first tried opening windows throughout the house from 10:15 - 10:30 AM. The other rooms responded to this, but the office CO2 level jumped back up as soon as the windows were closed. At around noon, I power cycled the office sensor.
+Second, the sensor results can occasionally get stuck at a high offset until they are power cycled. The CO2 level in the office jumped significantly the evening of December 4th (figure 6) and remained high into the next day (figure 7). I first tried opening windows throughout the house from 10:15 - 10:30 AM. The other rooms responded to this, but the office CO2 level jumped back up as soon as the windows were closed. At around noon, I power cycled the office sensor.
 
-![CO2 Data from Eric's Home (12/5/23)](../images/eric-dec-5.png){width=90%}
+![CO2 Data from Eric's Home (12/5/23)](../images/eric-dec-5.png){width=70%}
 
-Despite these issues, we believe that the sensor data captured is accurate enough to drive decisions, such as whether to open windows or whether to invest in a new HVAC that cycles in outdoor air in response to high indoor CO2 levels, as long as the sensor limitations are kept in mind.
-
-Additionally, the data offers some less consequential but still interesting
-insights. For example, the week of Thanksgiving I (Devin) was out of the home,
-and all three CO2 sensors consistently measured low and unchanging CO2 levels.
+There were other interesting trends we observed in the data.
+For example, the week of Thanksgiving I (Devin) was out of the home,
+and all three CO2 sensors consistently measured low and unchanging CO2 levels (figure 8).
 This indicates that practically all significant CO2 production in the home is
 linked to my activity in some way, rather than to furnace or hot water heater
 cycles.
 
-![CO2 from Devin's Vacant Home (11/22/23)](../images/devin-nov-22.png){width=80%}
+![CO2 from Devin's Vacant Home (11/22/23)](../images/devin-nov-22.png){width=70%}
 
-Another interesting pattern I have noticed is a cyclic pattern of rising and
-falling CO2 levels in the bedroom early morning hours. I am not a sleep expert,
-but the cycles appear consistently every night and only in the bedroom, leading
-me to think they may be related to sleep cycles. An interesting future project
-could be to correlate the CO2 data with data from a sleep tracker.
+Another pattern I noticed is a cyclic rising and
+falling CO2 levels in the bedroom during early morning hours (figure 9).
+The cycles appear every night and only in the bedroom, leading
+me to wonder if they are related to sleep cycles.
+Correlating the data to a sleep tracker would be a fascinating follow on project.
 
-![Cycling CO2 from Devin's Early Morning Bedroom](../images/devin-sleep-cycles.png){width=80%}
+![Cycling CO2 from Devin's Early Morning Bedroom](../images/devin-sleep-cycles.png){width=70%}
+
+Despite some issues, our sensor data correlated well to real world events. As long as the limitations we listed are kept in mind, we believe it is accurate enough to drive meaningful decisions. Examples range from whether to open a window in the winter to whether to invest in a new HVAC that cycles in outdoor air in response to high indoor CO2 levels.
+
 
 \pagebreak
 ## Demo Videos
