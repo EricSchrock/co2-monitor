@@ -80,7 +80,7 @@ Each sensor consists of a Raspberry Pi Pico WH connected to a CO2 sensor over I2
 
 ![Sensor Flowchart](../images/sensor-flow.png)
 
-![Server Flowchart](../images/sensor-flow.png)
+![Server Flowchart](../images/server-flow.png)
 
 ![Website Host Flowchart](../images/sensor-flow.png)
 

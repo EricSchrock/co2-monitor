@@ -1,0 +1,9 @@
+flowchart TD
+    Start((Start)) --> open[Open log]
+    open --> server[Start server]
+    server --> event{Event?}
+    event -->|No| event
+    event -->|Connection| accept[Accept]
+    accept --> event
+    event -->|Data| log[Log data]
+    log --> event
