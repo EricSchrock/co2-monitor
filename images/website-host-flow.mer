@@ -1,0 +1,7 @@
+flowchart TD
+    Start((Start)) --> get{GET?}
+    get -->|No| get
+    get -->|Yes| log[Read logs]
+    log --> image[Generate graph]
+    image --> post[POST]
+    post --> get

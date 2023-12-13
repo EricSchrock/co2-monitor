@@ -82,7 +82,7 @@ Each sensor consists of a Raspberry Pi Pico WH connected to a CO2 sensor over I2
 
 ![Server Flowchart](../images/server-flow.png)
 
-![Website Host Flowchart](../images/sensor-flow.png)
+![Website Host Flowchart](../images/website-host-flow.png)
 
 
 \pagebreak
@@ -383,10 +383,7 @@ The third goal would be to condense the sensor unit into a wall wart with a prot
 In conclusion, we accomplished the high level goal of our project, to prototype a distributed, networked, and affordable CO2 monitoring solution. Along the way, we tried new technologies, built new skills, and gained a deeper understanding of the quality of the air in our homes and of how it impacts our health.
 
 
-
-todo: Add a high-level diagram of the server code (replace placeholder)
-
-todo: Add a high-level diagram of the website code (replace placeholder)
+## Todo
 
 todo (Eric): Record a demo video of how to setup the hardware.
 
