@@ -330,9 +330,13 @@ Despite some issues, our sensor data correlated well to real world events. As lo
 
 We recommend watching these videos on a large screen and/or setting your video player to HD/1080p.
 
-* [Hardware Demo](TBD)
-* [Server Demo](https://drive.google.com/file/d/1L9Yu0_yAXi-gdyQ4_XYW-zPx3bfIi20b/view?usp=sharing)
-* [Website Demo](https://drive.google.com/file/d/16GgEEeUNtK0YC5ep9FUWzXnTIX9rkhJd/view?usp=sharing)
+[Sensor Demo (part 1)](https://drive.google.com/file/d/1a0BKiZZGW25rD8P6CbH9XDvGnOE_0py2/view?usp=drive_link)
+
+[Sensor Demo (part 2)](https://drive.google.com/file/d/1c5ptHw5lVUbp_UhcpIysfnRmQVWlg9hd/view?usp=drive_link)
+
+[Server Demo](https://drive.google.com/file/d/1L9Yu0_yAXi-gdyQ4_XYW-zPx3bfIi20b/view?usp=sharing)
+
+[Website Demo](https://drive.google.com/file/d/16GgEEeUNtK0YC5ep9FUWzXnTIX9rkhJd/view?usp=sharing)
 
 
 ## Project Repository
@@ -382,13 +386,3 @@ The third goal would be to condense the sensor unit into a wall wart with a prot
 ## Conclusion
 
 In conclusion, we accomplished the high level goal of our project, to prototype a distributed, networked, and affordable CO2 monitoring solution. Along the way, we tried new technologies, built new skills, and gained a deeper understanding of the quality of the air in our homes and of how it impacts our health.
-
-
-## Todo
-
-todo (Eric): Record a demo video of how to setup the hardware.
-
-* Sensor and base station hardware
-* Installation (https://github.com/EricSchrock/co2-monitor/blob/main/src/README.md)
-* Talk through LED transitions
-* Show server log and CO2 data files

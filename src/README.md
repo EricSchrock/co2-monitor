@@ -39,7 +39,7 @@ If you have issues with the server dying after a few hours, schedule a reboot
 every hour by adding the `0 * * * * root reboot` cron job.
 
 ```sh
-sudo nano /etc/crontab`
+sudo nano /etc/crontab
 ```
 
 # Web Viewer Setup
