@@ -331,7 +331,8 @@ Despite some issues, our sensor data correlated well to real world events. As lo
 We recommend watching these videos on a large screen and/or setting your video player to HD/1080p.
 
 * [Hardware Demo](TBD)
-* [Website Demo](TBD)
+* [Server Demo](https://drive.google.com/file/d/1L9Yu0_yAXi-gdyQ4_XYW-zPx3bfIi20b/view?usp=sharing)
+* [Website Demo](https://drive.google.com/file/d/16GgEEeUNtK0YC5ep9FUWzXnTIX9rkhJd/view?usp=sharing)
 
 
 ## Project Repository
@@ -391,12 +392,3 @@ todo (Eric): Record a demo video of how to setup the hardware.
 * Installation (https://github.com/EricSchrock/co2-monitor/blob/main/src/README.md)
 * Talk through LED transitions
 * Show server log and CO2 data files
-
-todo (Devin): Record a demo video of how to use the website.
-
-* Installation (https://github.com/EricSchrock/co2-monitor/blob/main/src/README.md)
-* Talk through and demo website features
-  * Date selection
-  * Sensor/room selection
-  * Refresh for latest data
-* Talk through interesting trends observed in the data
